@@ -18,7 +18,14 @@ public class CustomLogger: Logger
 		Console.BackgroundColor = ConsoleColor.DarkBlue;
 		
 		//Console.WriteLine(e.Message);
-		Console.WriteLine("ProjectEnd: " + e.ProjectFile + ", [" + e.Succeeded + "]");
+		//Console.WriteLine("ProjectEnd: " + e.ProjectFile + ", [" + e.Succeeded + "]");
+		
+		/* Filter out all the "ZERO_CHECK ones */
+		if (e.ProjectFile.Contains("ZERO_CHECK.vcxproj") == false &&
+		    e.ProjectFile.Contains("ALL_BUILD.vcxproj") == false)
+		{
+			Console.WriteLine("ProjectEnd: " + e.ProjectFile);
+		}
 		
 		Console.ResetColor();
 	}
