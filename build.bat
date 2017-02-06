@@ -1,5 +1,7 @@
 @echo off
 
+setlocal ENABLEEXTENSIONS
+
 REM Detect MSVC Installation
 if DEFINED VisualStudioVersion goto msvc_detect_finally
 set VALUE_NAME=ProductDir
@@ -26,3 +28,4 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo Building CustomLogger.dll ...
 csc /t:library CustomLogger.cs /reference:Microsoft.Build.Utilities.v4.0.dll;Microsoft.Build.Framework.dll
+
