@@ -40,8 +40,8 @@ public class CustomLogger: Logger
 			 (e.Importance == MessageImportance.Normal && IsVerbosityAtLeast(LoggerVerbosity.Normal)) ||
 			 (e.Importance == MessageImportance.Low && IsVerbosityAtLeast(LoggerVerbosity.Detailed)) )
 		{
-			Console.WriteLine(String.Format("{0}: [{1}:{2}] <{3}> -> '{4}'",
-			                                e.SenderName, e.File, e.LineNumber, e.Subcategory, e.Message));
+			Console.WriteLine(String.Format("{0}: [1] -> '{2}'",
+			                                e.SenderName, e.Importance, e.Message));
 		}
 	}
 	
