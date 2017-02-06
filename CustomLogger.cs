@@ -24,14 +24,7 @@ public class CustomLogger: Logger
 		eventSource.BuildFinished += new BuildFinishedEventHandler(handleBuildFinished);
 	}
 	
-	/* Event Handlers ------------------------------------------------ */
-	
-	private void handleTaskStarted(object sender, TaskStartedEventArgs e)
-	{
-		//Console.WriteLine(e.Message);
-		Console.WriteLine(String.Format("Task: '{0}' from '{1}' for {2}",
-		                                e.TaskName, e.TaskFile, e.ProjectFile));
-	}
+	/* Event Handlers - "Message" ------------------------------------ */
 	
 	private void handleMessageRaised(object sender, BuildMessageEventArgs e)
 	{
@@ -45,17 +38,26 @@ public class CustomLogger: Logger
 		}
 	}
 	
+	/* Event Handlers ------------------------------------------------ */
+	
+	private void handleTaskStarted(object sender, TaskStartedEventArgs e)
+	{
+		//Console.WriteLine(e.Message);
+		Console.WriteLine(String.Format("Task: '{0}' from '{1}' for {2}",
+		                                e.TaskName, e.TaskFile, e.ProjectFile));
+	}
+	
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
 	{
-		WriteShadedLine(" ! " + FormatWarningEvent(e),
+		WriteShadedLine("! " + FormatWarningEvent(e),
 		                ConsoleColor.Yellow, ConsoleColor.Black);
 		warnings++;
 	}
 	
 	private void handleErrorRaised(object sender, BuildErrorEventArgs e)
 	{
-		WriteShadedLine(" !!! " + FormatErrorEvent(e),
+		WriteShadedLine("!!! " + FormatErrorEvent(e),
 		                ConsoleColor.DarkRed, ConsoleColor.White);
 		
 		errors++;
@@ -69,8 +71,8 @@ public class CustomLogger: Logger
 		else {
 			WriteShadedLine("Build failed.", ConsoleColor.Red, ConsoleColor.Black);
 		}
-		Console.WriteLine( String.Format( "{0} Warning(s)", warnings ) );
-		Console.WriteLine( String.Format( "{0} Error(s)", errors ) );
+		Console.WriteLine( String.Format( "  {0} Warning(s)", warnings ) );
+		Console.WriteLine( String.Format( "  {0} Error(s)", errors ) );
 	}
 	
 	
