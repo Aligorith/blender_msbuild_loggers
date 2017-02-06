@@ -4,18 +4,22 @@ using Microsoft.Build.Framework;
  
 public class CustomLogger: Logger
 {
-	private int warnings = 0;
-	private int errors = 0;
- 
 	public override void Initialize(IEventSource eventSource)
 	{
-		eventSource.WarningRaised += ( s, e ) => ++warnings;
-		eventSource.ErrorRaised += ( s, e ) => ++errors;
-		eventSource.BuildFinished += ( s, e ) =>
-		{
-			Console.WriteLine( errors == 0 ? "Build succeeded." : "Build failed." );
-			Console.WriteLine( String.Format( "{0} Warning(s)", warnings ) );
-			Console.WriteLine( String.Format( "{0} Error(s)", errors ) );
-		};
+		/* Project Finished Events - Only report the ones we care about... */
+		eventSource.ProjectFinished += new ProjectFinishedEventHandler(handleProjectFinished);
+	}
+	
+	
+	/* Our custom handler for "Project Finished" events */
+	private void handleProjectFinished(object sender, ProjectFinishedEventArgs e)
+	{
+		// Default Handling - Test
+		Console.BackgroundColor = ConsoleColor.DarkBlue;
+		
+		//Console.WriteLine(e.Message);
+		Console.WriteLine("ProjectEnd: " + e.ProjectFile + ", [" + e.Succeeded + "]");
+		
+		Console.ResetColor();
 	}
 }
