@@ -48,16 +48,14 @@ public class CustomLogger: Logger
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
 	{
-		// XXX: Refine this
-		WriteShadedLine(" ! " + e.Message,
+		WriteShadedLine(" ! " + FormatWarningEvent(e),
 		                ConsoleColor.Yellow, ConsoleColor.Black);
 		warnings++;
 	}
 	
 	private void handleErrorRaised(object sender, BuildErrorEventArgs e)
 	{
-		// XXX: Refine this
-		WriteShadedLine(" !!! " + e.Message,
+		WriteShadedLine(" !!! " + FormatErrorEvent(e),
 		                ConsoleColor.DarkRed, ConsoleColor.White);
 		
 		errors++;
