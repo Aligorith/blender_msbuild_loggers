@@ -26,6 +26,7 @@ public class CustomLogger: Logger
 	
 	/* Event Handlers - "Message" ------------------------------------ */
 	
+	/* Entrypoint for all "Message" handling */
 	private void handleMessageRaised(object sender, BuildMessageEventArgs e)
 	{
 		// XXX: We almost NEVER want the really detailed shit here... MSVC can be too bloody noisy (producing lots of garbage) if left unchecked
@@ -33,10 +34,69 @@ public class CustomLogger: Logger
 			 (e.Importance == MessageImportance.Normal && IsVerbosityAtLeast(LoggerVerbosity.Normal)) ||
 			 (e.Importance == MessageImportance.Low && IsVerbosityAtLeast(LoggerVerbosity.Detailed)) )
 		{
-			//Console.WriteLine(String.Format("{0}: [1] -> '{2}'",
-			//                                e.SenderName, e.Importance, e.Message));
+			if (e.SenderName == "CL") {
+				handleMessage_CL(e);
+			}
+			else if (e.SenderName == "Link") {
+				handleMessage_Link(e);
+			}
+			else {
+				//Console.WriteLine(String.Format("{0}: [1] -> '{2}'",
+				//                                e.SenderName, e.Importance, e.Message));
+			}
 		}
 	}
+	
+	
+	/* "CL.exe" events */
+	private void handleMessage_CL(BuildMessageEventArgs e)
+	{
+		/* Detect whether this one is the commandline report, or the name-only */
+		bool is_command_line = e.Message.Contains("CL.exe");
+		
+		/* Unless we want detailed logs, skip the one where it reports the commandline being used */
+		if ((is_command_line == true) && (Verbosity == LoggerVerbosity.Detailed)) {
+			/* This is the command line - Only show in detailed logs */
+			string line = String.Format("[{0}]: {1}", 
+			                            e.SenderName, e.Message);
+			
+			// XXX: Should we shade this?
+			WriteShadedLine(line, 
+			                ConsoleColor.DarkGray, ConsoleColor.White);
+		}
+		else if ((is_command_line == false) && (Verbosity != LoggerVerbosity.Detailed)) {
+			/* This is the name only - Only show when not showing detailed logs */
+			string line = String.Format("   Compiling => \"{0}\"",
+			                            e.Message);
+			
+			WriteFilledLine(line,
+			                ConsoleColor.Blue, ConsoleColor.White);
+		}
+	}
+	
+	/* "Linker" events - Same as for CL */
+	private void handleMessage_Link(BuildMessageEventArgs e)
+	{
+		/* Detect whether this one is the commandline report, or the name-only */
+		bool is_command_line = e.Message.Contains("link.exe");
+		
+		/* Unless we want detailed logs, skip the one where it reports the commandline being used */
+		if ((is_command_line == true) && (Verbosity == LoggerVerbosity.Detailed)) {
+			/* This is the command line - Only show in detailed logs */
+			string line = String.Format("[{0}]: {1}", 
+			                            e.SenderName, e.Message);
+			
+			// XXX: Should we shade this?
+			WriteShadedLine(line, 
+			                ConsoleColor.DarkGray, ConsoleColor.White);
+		}
+		else if ((is_command_line == false) && (Verbosity != LoggerVerbosity.Detailed)) {
+			/* This is the "Creating Library" line - Only show when not showing detailed logs */
+			WriteFilledLine(e.Message,
+			                ConsoleColor.DarkMagenta, ConsoleColor.White);
+		}
+	}
+	
 	
 	/* Event Handlers ------------------------------------------------ */
 	
@@ -77,6 +137,17 @@ public class CustomLogger: Logger
 	
 	
 	/* Helper functions ------------------------------------------- */
+	
+	/* Write line with partial color fill */
+	private void WriteFilledLine(string message, ConsoleColor bg, ConsoleColor fg)
+	{
+		Console.BackgroundColor = bg;
+		Console.ForegroundColor = fg;
+		
+		Console.WriteLine(message);
+		
+		Console.ResetColor();
+	}
 	
 	/* Write line which fills the entire row with a solid block of color */
 	private void WriteShadedLine(string message, ConsoleColor bg, ConsoleColor fg)
