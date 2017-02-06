@@ -15,8 +15,10 @@ public class CustomLogger: Logger
 		 */
 		
 		eventSource.TaskStarted += new TaskStartedEventHandler(handleTaskStarted);
+		
 		eventSource.WarningRaised += new BuildWarningEventHandler(handleWarningRaised);
 		eventSource.ErrorRaised   += new BuildErrorEventHandler(handleErrorRaised);
+		
 		eventSource.BuildFinished += new BuildFinishedEventHandler(handleBuildFinished);
 	}
 	
@@ -24,7 +26,9 @@ public class CustomLogger: Logger
 	
 	private void handleTaskStarted(object sender, TaskStartedEventArgs e)
 	{
-		Console.WriteLine(e.Message);
+		//Console.WriteLine(e.Message);
+		Console.WriteLine(String.Format("Task: '{0}' from '{1}' for {2}",
+		                                e.TaskName, e.TaskFile, e.ProjectFile));
 	}
 	
 	
