@@ -14,7 +14,9 @@ public class CustomLogger: Logger
 		 * for it, and it won't get added...
 		 */
 		
-		eventSource.TaskStarted += new TaskStartedEventHandler(handleTaskStarted);
+		//eventSource.TaskStarted += new TaskStartedEventHandler(handleTaskStarted);
+		 
+		eventSource.MessageRaised += new BuildMessageEventHandler(handleMessageRaised);
 		
 		eventSource.WarningRaised += new BuildWarningEventHandler(handleWarningRaised);
 		eventSource.ErrorRaised   += new BuildErrorEventHandler(handleErrorRaised);
@@ -29,6 +31,18 @@ public class CustomLogger: Logger
 		//Console.WriteLine(e.Message);
 		Console.WriteLine(String.Format("Task: '{0}' from '{1}' for {2}",
 		                                e.TaskName, e.TaskFile, e.ProjectFile));
+	}
+	
+	private void handleMessageRaised(object sender, BuildMessageEventArgs e)
+	{
+		// XXX: We almost NEVER want the really detailed shit here... MSVC can be too bloody noisy (producing lots of garbage) if left unchecked
+		if ( (e.Importance == MessageImportance.High && IsVerbosityAtLeast(LoggerVerbosity.Minimal)) ||
+			 (e.Importance == MessageImportance.Normal && IsVerbosityAtLeast(LoggerVerbosity.Normal)) ||
+			 (e.Importance == MessageImportance.Low && IsVerbosityAtLeast(LoggerVerbosity.Detailed)) )
+		{
+			Console.WriteLine(String.Format("{0}: [{1}:{2}] <{3}> -> '{4}'",
+			                                e.SenderName, e.File, e.LineNumber, e.Subcategory, e.Message));
+		}
 	}
 	
 	
