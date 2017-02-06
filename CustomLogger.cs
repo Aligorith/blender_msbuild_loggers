@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Microsoft.Build.Utilities;
 using Microsoft.Build.Framework;
  
@@ -37,8 +38,14 @@ public class CustomLogger: Logger
 			if (e.SenderName == "CL") {
 				handleMessage_CL(e);
 			}
+			else if (e.SenderName == "LIB") {
+				handleMessage_LIB(e);
+			}
 			else if (e.SenderName == "Link") {
 				handleMessage_Link(e);
+			}
+			else if (e.SenderName == "CustomBuild") {
+				handleMessage_CustomBuild(e);
 			}
 			else {
 				//Console.WriteLine(String.Format("{0}: [1] -> '{2}'",
@@ -48,30 +55,71 @@ public class CustomLogger: Logger
 	}
 	
 	
-	/* "CL.exe" events */
+	/* "CL.exe" events -  A file gets compiled */
+	// XXX: CL events can also be second-line output from errors...
 	private void handleMessage_CL(BuildMessageEventArgs e)
 	{
 		/* Detect whether this one is the commandline report, or the name-only */
 		bool is_command_line = e.Message.Contains("CL.exe");
+		bool is_err_overflow = ((e.Message[0] == ' ') || (e.Message[0] == '\t'));
 		
 		/* Unless we want detailed logs, skip the one where it reports the commandline being used */
-		if ((is_command_line == true) && (Verbosity == LoggerVerbosity.Detailed)) {
-			/* This is the command line - Only show in detailed logs */
-			string line = String.Format("[{0}]: {1}", 
-			                            e.SenderName, e.Message);
-			
-			// XXX: Should we shade this?
-			WriteShadedLine(line, 
-			                ConsoleColor.DarkGray, ConsoleColor.White);
+		if (is_command_line == true) {
+			if (Verbosity == LoggerVerbosity.Detailed) {
+				/* This is the command line - Only show in detailed logs */
+				string line = String.Format("[{0}]: {1}", 
+				                            e.SenderName, e.Message);
+				
+				// XXX: Should we shade this?
+				WriteShadedLine(line, 
+				                ConsoleColor.DarkGray, ConsoleColor.White);
+			}
 		}
-		else if ((is_command_line == false) && (Verbosity != LoggerVerbosity.Detailed)) {
-			/* This is the name only - Only show when not showing detailed logs */
-			string line = String.Format("   Compiling => \"{0}\"",
-			                            e.Message);
-			
+		else if (is_err_overflow) {
+			/* This isn't strictly a compile string (i.e. name of the file, from first line of CL output),
+			 * but is rather, part of the error/warning strings! So, just shade as if it is one of either.
+			 */
+			// XXX: Color needs work...
+			WriteShadedLine(e.Message,
+			                ConsoleColor.Yellow, ConsoleColor.Black);
+		}
+		else {
+			if (Verbosity != LoggerVerbosity.Detailed) {
+				/* This is the name only - Only show when not showing detailed logs */
+				// XXX: This may also be part of an error!
+				string line = String.Format("  Compiling => \"{0}\"",
+				                            e.Message);
+				
+				//WriteFilledLine(line,
+				//                ConsoleColor.Blue, ConsoleColor.White);
+				Console.WriteLine(line);
+			}
+		}
+	}
+	
+	
+	/* Helper to extract the libname from the commandline */
+	string FindLibnameFromCmdline(string cmd)
+	{
+		return null;
+	}
+	
+	/* "LIB" events - Relinking a module */
+	private void handleMessage_LIB(BuildMessageEventArgs e)
+	{
+		/* Extract out the filename from the "OUT" parameter */
+		string libname = FindLibnameFromCmdline(e.Message);
+		
+		if (libname != null) {
+			string line = String.Format("  Linking Lib => \"{0}\"",
+				                            e.Message);
+				
 			//WriteFilledLine(line,
-			//                ConsoleColor.Blue, ConsoleColor.White);
+			//                ConsoleColor.DarkBlue, ConsoleColor.White);
 			Console.WriteLine(line);
+		}
+		else {
+			Console.WriteLine(String.Format("LIB: {0}", e.Message));
 		}
 	}
 	
@@ -95,6 +143,26 @@ public class CustomLogger: Logger
 			/* This is the "Creating Library" line - Only show when not showing detailed logs */
 			WriteFilledLine(e.Message,
 			                ConsoleColor.DarkMagenta, ConsoleColor.White);
+		}
+	}
+	
+	/* CustomBuild events */
+	private void handleMessage_CustomBuild(BuildMessageEventArgs e)
+	{
+		/* Cases:
+		 *  -> Include: "Generate" events
+		 *  -> Include: makesdna/rna events - "Running", "Writing", etc.
+		 *  -> Skip: "CMake does not need to re-run"...
+		 */
+		
+		/* Logic: Just skip the ones we don't want for now, and report everything else */
+		// TODO: Shade the different cases differently?
+		bool unwanted = (e.Message.StartsWith("CMake does not need to re-run"));
+		
+		if (unwanted == false) {
+			string line = String.Format("> {0}", e.Message);
+			WriteFilledLine(line,
+			                ConsoleColor.DarkYellow, ConsoleColor.White);
 		}
 	}
 	
