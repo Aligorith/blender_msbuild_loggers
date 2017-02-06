@@ -12,14 +12,20 @@ it is hard to tell if a recompile actually did anything to recompile the file we
 Usage
 -----
 
-1) Compile using the provided "build.bat"
+1) Run the following command to perform the two steps involved in building/installing the logger:
+   $ build && deploy
 
-2) Copy the CustomLogger.dll generated, and dump it in the root directory of the Blender sources
+   For reference, the two steps performed here are:
+   1a) Compile using the provided "build.bat"
+   1b) Copy the CustomLogger.dll generated, and dump it in the root directory of the Blender sources
 
-3) Modify the msbuild commandline to include
+2) Make your own copy of make.bat, and modify the msbuild commandline to include
    /logger:CustomLogger.dll /noconsolelogger
 
    (XXX: Perhaps we don't need the noconsolelogger? We still want the warnings/errors...)
+   
+3) Run your modified make.bat
+
 
 
 Useful Links
