@@ -14,7 +14,7 @@ public class CustomLogger: Logger
 		 * for it, and it won't get added...
 		 */
 		
-		eventSource.TargetStarted += new TargetStartedEventHandler(handleTargetStarted);
+		eventSource.TaskStarted += new TaskStartedEventHandler(handleTaskStarted);
 		eventSource.WarningRaised += new BuildWarningEventHandler(handleWarningRaised);
 		eventSource.ErrorRaised   += new BuildErrorEventHandler(handleErrorRaised);
 		eventSource.BuildFinished += new BuildFinishedEventHandler(handleBuildFinished);
@@ -22,7 +22,7 @@ public class CustomLogger: Logger
 	
 	/* Event Handlers ------------------------------------------------ */
 	
-	private void handleTargetStarted(object sender, TargetStartedEventArgs e)
+	private void handleTaskStarted(object sender, TaskStartedEventArgs e)
 	{
 		Console.WriteLine(e.Message);
 	}
