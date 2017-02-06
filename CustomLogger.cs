@@ -69,8 +69,9 @@ public class CustomLogger: Logger
 			string line = String.Format("   Compiling => \"{0}\"",
 			                            e.Message);
 			
-			WriteFilledLine(line,
-			                ConsoleColor.Blue, ConsoleColor.White);
+			//WriteFilledLine(line,
+			//                ConsoleColor.Blue, ConsoleColor.White);
+			Console.WriteLine(line);
 		}
 	}
 	
