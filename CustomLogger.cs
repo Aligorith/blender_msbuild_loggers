@@ -231,24 +231,35 @@ public class CustomLogger: Logger
 	/* Helper to simplify the name of the file (from Warnings/Errors) */
 	private string ShortSourcename(string path)
 	{
+		/* Split path into elements */
 		char SEP = System.IO.Path.DirectorySeparatorChar;
 		string[] elems = path.Split(SEP);
 		
 		/* Use grandparent if parent directory is "intern", since there's no useful info there */
-		if (elems[elems.Length - 2] == "intern") {
-			return elems[elems.Length - 3] + SEP + elems[elems.Length - 1];
+		string filename = elems[elems.Length - 1];
+		string parname  = elems[elems.Length - 2];
+		string gpname   = elems[elems.Length - 3];
+		
+		string dirname = null;
+		
+		if (parname == "intern") {
+			dirname = gpname;
 		}
 		else {
-			return elems[elems.Length - 2] + SEP + elems[elems.Length - 1];
+			dirname = parname;
 		}
+		
+		/* Construct formatted string for "shortname" */
+		//return String.Format(".../{0}/{1}", dirname, filename);
+		return String.Format("{0}/{1}", dirname, filename);
 	}
 	
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
 	{
 		string filename = ShortSourcename(e.File);
-		string line = String.Format("! {0}:{1} - {2}",
-		                            filename, e.LineNumber, e.Message);
+		string line = String.Format("! {0}:{1} - {3}  [{2}]",
+		                            filename, e.LineNumber, e.Code, e.Message);
 		
 		WriteShadedLine(line,
 		                ConsoleColor.Yellow, ConsoleColor.Black);
