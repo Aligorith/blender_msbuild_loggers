@@ -146,7 +146,7 @@ public class CustomLogger: Logger
 		string libname = FindLibNameFromCmdline(e.Message);
 		
 		if ((libname != null) && (Verbosity != LoggerVerbosity.Detailed)) {
-			string line = String.Format("   Linking Lib => \"{0}\"",
+			string line = String.Format("  Linking Lib => \"{0}\"",
 				                            libname);
 				
 			WriteFilledLine(line,
@@ -177,7 +177,7 @@ public class CustomLogger: Logger
 		}
 		else if ((is_command_line == false) && (Verbosity != LoggerVerbosity.Detailed)) {
 			/* This is the "Creating Library" line - Only show when not showing detailed logs */
-			WriteFilledLine(e.Message,
+			WriteFilledLine("  " + e.Message.Trim(),
 			                ConsoleColor.DarkMagenta, ConsoleColor.White);
 		}
 	}
@@ -247,13 +247,13 @@ public class CustomLogger: Logger
 	private void handleBuildFinished(object sender, BuildFinishedEventArgs e)
 	{
 		if (errors == 0) {
-			WriteShadedLine(">> Build succeeded.", ConsoleColor.DarkGreen, ConsoleColor.White);
+			WriteShadedLine("# Build succeeded.", ConsoleColor.DarkGreen, ConsoleColor.White);
 		}
 		else {
-			WriteShadedLine(">> Build failed.", ConsoleColor.Red, ConsoleColor.Black);
+			WriteShadedLine("# Build failed.", ConsoleColor.Red, ConsoleColor.Black);
 		}
 		
-		var warnings_str = String.Format("    {0} Warning(s)", warnings);
+		var warnings_str = String.Format("  {0} Warning(s)", warnings);
 		if (warnings > 0) {
 			WriteColoredLine(warnings_str, ConsoleColor.Yellow);
 		}
@@ -261,7 +261,7 @@ public class CustomLogger: Logger
 			Console.WriteLine(warnings_str);
 		}
 		
-		var errors_str   = String.Format("    {0} Error(s)", errors);
+		var errors_str   = String.Format("  {0} Error(s)", errors);
 		if (errors > 0) {
 			WriteColoredLine(errors_str, ConsoleColor.Red);
 		}
