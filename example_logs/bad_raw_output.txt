@@ -1,0 +1,213 @@
+
+
+---[C:\blenderdev\master2\blender]---
+13:06:02 > bmc
+  Checking Build System
+  CMake does not need to re-run because C:/blenderdev/master2/build/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/string/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/ghost/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/guardedalloc/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/libmv/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/memutil/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/opencolorio/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/mikktspace/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/glew-mx/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/eigen/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/decklink/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/audaspace/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/iksolver/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/itasc/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/moto/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/rigidbody/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/utfconv/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/intern/gpudirect/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/curve_fit_nd/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/rangetree/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/wcwidth/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/bullet2/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/glew/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/libopenjpeg/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/lzo/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/lzma/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/ceres/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/gflags/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/extern/glog/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/datatoc/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/animation/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/armature/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/curve/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/gpencil/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/interface/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/io/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/mask/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/mesh/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/metaball/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/object/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/physics/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/render/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/screen/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/sculpt_paint/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/sound/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_action/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_api/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_buttons/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_clip/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_console/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_file/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_graph/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_image/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_info/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_logic/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_nla/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_node/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_outliner/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_script/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_sequencer/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_text/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_time/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_userpref/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_view3d/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/transform/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/util/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/uvedit/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/datafiles/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/windowmanager/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenkernel/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenlib/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/bmesh/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/render/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenfont/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blentranslation/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenloader/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/depsgraph/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/ikplugin/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/physics/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/gpu/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/imbuf/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/nodes/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/modifiers/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesdna/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesdna/intern/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesrna/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesrna/intern/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/avi/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/intern/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/generic/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/mathutils/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/bmesh/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/freestyle/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/source/creator/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/tests/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/tests/python/CMakeFiles/generate.stamp is up-to-date.
+  CMake does not need to re-run because C:/blenderdev/master2/build/tests/gtests/CMakeFiles/generate.stamp is up-to-date.
+  extern_rangetree.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_rangetree.lib
+  makesdna.vcxproj -> C:\blenderdev\master2\build\bin\Release\makesdna.exe
+  bf_avi.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_avi.lib
+  bf_editor_curve.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_curve.lib
+  bf_editor_render.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_render.lib
+  extern_wcwidth.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_wcwidth.lib
+  bf_blentranslation.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blentranslation.lib
+  bf_blenfont.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenfont.lib
+  bf_dna_blenlib.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_dna_blenlib.lib
+  bf_bmesh.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_bmesh.lib
+  bf_blenlib.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenlib.lib
+  bf_editor_animation.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_animation.lib
+  bf_editor_armature.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_armature.lib
+  gpencil_edit.c
+  bf_editor_io.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_io.lib
+  bf_editor_interface.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_interface.lib
+  bf_editor_mask.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_mask.lib
+  bf_editor_metaball.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_metaball.lib
+  bf_editor_mesh.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_mesh.lib
+  bf_editor_object.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_object.lib
+  bf_editor_screen.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_screen.lib
+  bf_editor_physics.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_physics.lib
+  bf_editor_sculpt_paint.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_sculpt_paint.lib
+  action_select.c
+  bf_editor_sound.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_sound.lib
+  bf_editor_space_api.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_api.lib
+  bf_editor_space_buttons.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_buttons.lib
+  bf_editor_space_console.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_console.lib
+  bf_editor_space_clip.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_clip.lib
+  bf_editor_space_file.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_file.lib
+  bf_editor_space_graph.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_graph.lib
+  bf_editor_space_image.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_image.lib
+  bf_editor_space_info.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_info.lib
+  bf_blenkernel.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenkernel.lib
+  bf_editor_space_logic.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_logic.lib
+  bf_editor_space_nla.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_nla.lib
+  bf_editor_space_action.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_action.lib
+  bf_editor_space_node.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_node.lib
+  bf_editor_gpencil.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_gpencil.lib
+  bf_editor_space_outliner.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_outliner.lib
+  bf_dna.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_dna.lib
+  bf_editor_space_sequencer.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_sequencer.lib
+  bf_editor_space_script.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_script.lib
+  bf_editor_space_text.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_text.lib
+  bf_editor_space_time.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_time.lib
+  bf_editor_transform.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_transform.lib
+  bf_editor_space_userpref.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_userpref.lib
+  bf_editor_space_view3d.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_view3d.lib
+  bf_editor_util.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_util.lib
+  bf_blenloader.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenloader.lib
+  bf_editor_uvedit.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_uvedit.lib
+  bf_ikplugin.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_ikplugin.lib
+  bf_imbuf.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_imbuf.lib
+  bf_intern_decklink.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_decklink.lib
+  bf_intern_eigen.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_eigen.lib
+  bf_intern_glew_mx.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_glew_mx.lib
+  bf_intern_ghost.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_ghost.lib
+  bf_intern_gpudirect.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_gpudirect.lib
+  bf_intern_guardedalloc.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_guardedalloc.lib
+  bf_intern_iksolver.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_iksolver.lib
+  bf_intern_itasc.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_itasc.lib
+  bf_intern_memutil.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_memutil.lib
+  bf_intern_mikktspace.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_mikktspace.lib
+  bf_freestyle.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_freestyle.lib
+  bf_intern_libmv.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_libmv.lib
+  bf_intern_moto.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_moto.lib
+  bf_intern_opencolorio.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_opencolorio.lib
+  makesrna.vcxproj -> C:\blenderdev\master2\build\bin\Release\makesrna.exe
+  bf_intern_string.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_string.lib
+  bf_intern_utfconv.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_utfconv.lib
+  bf_intern_rigidbody.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_rigidbody.lib
+  bf_modifiers.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_modifiers.lib
+  bf_physics.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_physics.lib
+  bf_python_bmesh.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python_bmesh.lib
+  bf_python_ext.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python_ext.lib
+  bf_python.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python.lib
+  bf_python_mathutils.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python_mathutils.lib
+  bf_nodes.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_nodes.lib
+  Generating buildinfo.h_fake, buildinfo.h
+  bf_render.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_render.lib
+  bf_windowmanager.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_windowmanager.lib
+  datatoc.vcxproj -> C:\blenderdev\master2\build\bin\Release\datatoc.exe
+  datatoc_icon.vcxproj -> C:\blenderdev\master2\build\bin\Release\datatoc_icon.exe
+  bf_intern_audaspace.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_audaspace.lib
+  extern_bullet.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_bullet.lib
+  extern_curve_fit_nd.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_curve_fit_nd.lib
+  extern_gflags.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_gflags.lib
+  extern_glew.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_glew.lib
+  extern_glog.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_glog.lib
+  extern_ceres.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_ceres.lib
+  extern_minilzo.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_minilzo.lib
+  extern_lzma.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_lzma.lib
+  extern_openjpeg.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_openjpeg.lib
+  bf_gpu.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_gpu.lib
+  bf_depsgraph.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_depsgraph.lib
+  bf_editor_datafiles.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_datafiles.lib
+  bf_rna.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_rna.lib
+  buildinfo.c
+  buildinfoobj.vcxproj -> C:\blenderdev\master2\build\source\creator\buildinfoobj.dir\Release\buildinfoobj.lib
+  buildinfo.c
+     Creating library C:/blenderdev/master2/build/bin/Release/blender.lib and object C:/blenderdev/master2/build/bin/Release/blender.exp
+  blender.vcxproj -> C:\blenderdev\master2\build\bin\Release\blender.exe
+
+Blender successfully built, run from: "C:\blenderdev\master2\blender\..\build\bin\Release"
+

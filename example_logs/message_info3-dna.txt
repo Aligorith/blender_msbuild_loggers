@@ -1,0 +1,746 @@
+CustomBuild: [1] -> 'Checking Build System'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/string/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/ghost/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/guardedalloc/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/libmv/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/memutil/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/opencolorio/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/mikktspace/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/glew-mx/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/eigen/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/decklink/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/audaspace/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/iksolver/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/itasc/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/moto/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/rigidbody/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/utfconv/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/intern/gpudirect/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/curve_fit_nd/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/rangetree/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/wcwidth/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/bullet2/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/glew/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/libopenjpeg/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/lzo/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/lzma/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/ceres/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/gflags/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/extern/glog/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/datatoc/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/animation/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/armature/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/curve/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/gpencil/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/interface/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/io/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/mask/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/mesh/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/metaball/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/object/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/physics/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/render/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/screen/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/sculpt_paint/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/sound/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_action/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_api/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_buttons/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_clip/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_console/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_file/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_graph/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_image/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_info/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_logic/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_nla/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_node/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_outliner/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_script/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_sequencer/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_text/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_time/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_userpref/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/space_view3d/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/transform/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/util/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/uvedit/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/editors/datafiles/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/windowmanager/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenkernel/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenlib/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/bmesh/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/render/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenfont/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blentranslation/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/blenloader/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/depsgraph/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/ikplugin/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/physics/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/gpu/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/imbuf/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/nodes/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/modifiers/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesdna/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesdna/intern/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesrna/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/makesrna/intern/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/avi/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/intern/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/generic/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/mathutils/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/python/bmesh/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/blender/freestyle/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/source/creator/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/tests/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/tests/python/CMakeFiles/generate.stamp is up-to-date.'
+CustomBuild: [1] -> 'CMake does not need to re-run because C:/blenderdev/master2/build/tests/gtests/CMakeFiles/generate.stamp is up-to-date.'
+Message: [1] -> 'extern_glog.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_glog.lib'
+Message: [1] -> 'extern_lzma.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_lzma.lib'
+Message: [1] -> 'extern_curve_fit_nd.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_curve_fit_nd.lib'
+Message: [1] -> 'datatoc.vcxproj -> C:\blenderdev\master2\build\bin\Release\datatoc.exe'
+Message: [1] -> 'extern_minilzo.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_minilzo.lib'
+Message: [1] -> 'extern_openjpeg.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_openjpeg.lib'
+Message: [1] -> 'bf_intern_opencolorio.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_opencolorio.lib'
+Message: [1] -> 'bf_modifiers.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_modifiers.lib'
+Message: [1] -> 'bf_editor_space_userpref.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_userpref.lib'
+Message: [1] -> 'bf_imbuf.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_imbuf.lib'
+Message: [1] -> 'bf_editor_space_file.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_file.lib'
+   Compiling => "view3d_edit.c"
+   Compiling => "render_opengl.c"
+   Compiling => "screen_context.c"
+   Compiling => "view3d_header.c"
+   Compiling => "view3d_ruler.c"
+   Compiling => "screen_ops.c"
+Message: [1] -> 'bf_blentranslation.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blentranslation.lib'
+Message: [1] -> 'bf_bmesh.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_bmesh.lib'
+   Compiling => "deg_builder_nodes.cc"
+   Compiling => "deg_builder_relations.cc"
+Message: [1] -> 'extern_wcwidth.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_wcwidth.lib'
+Message: [1] -> 'extern_rangetree.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_rangetree.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_screen.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_screen.dir\Release\area.obj
+bf_editor_screen.dir\Release\glutil.obj
+bf_editor_screen.dir\Release\screen_context.obj
+bf_editor_screen.dir\Release\screen_edit.obj
+bf_editor_screen.dir\Release\screen_ops.obj
+bf_editor_screen.dir\Release\screendump.obj'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_render.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_render.dir\Release\render_internal.obj
+bf_editor_render.dir\Release\render_opengl.obj
+bf_editor_render.dir\Release\render_ops.obj
+bf_editor_render.dir\Release\render_preview.obj
+bf_editor_render.dir\Release\render_shading.obj
+bf_editor_render.dir\Release\render_update.obj
+bf_editor_render.dir\Release\render_view.obj'
+Message: [1] -> 'bf_editor_screen.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_screen.lib'
+Message: [1] -> 'bf_avi.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_avi.lib'
+Message: [1] -> 'bf_editor_render.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_render.lib'
+   Compiling => "makesdna.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_view3d.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_view3d.dir\Release\drawanimviz.obj
+bf_editor_space_view3d.dir\Release\drawarmature.obj
+bf_editor_space_view3d.dir\Release\drawmesh.obj
+bf_editor_space_view3d.dir\Release\drawobject.obj
+bf_editor_space_view3d.dir\Release\drawsimdebug.obj
+bf_editor_space_view3d.dir\Release\drawvolume.obj
+bf_editor_space_view3d.dir\Release\space_view3d.obj
+bf_editor_space_view3d.dir\Release\view3d_buttons.obj
+bf_editor_space_view3d.dir\Release\view3d_camera_control.obj
+bf_editor_space_view3d.dir\Release\view3d_draw.obj
+bf_editor_space_view3d.dir\Release\view3d_edit.obj
+bf_editor_space_view3d.dir\Release\view3d_fly.obj
+bf_editor_space_view3d.dir\Release\view3d_walk.obj
+bf_editor_space_view3d.dir\Release\view3d_header.obj
+bf_editor_space_view3d.dir\Release\view3d_iterators.obj
+bf_editor_space_view3d.dir\Release\view3d_ops.obj
+bf_editor_space_view3d.dir\Release\view3d_project.obj
+bf_editor_space_view3d.dir\Release\view3d_ruler.obj
+bf_editor_space_view3d.dir\Release\view3d_select.obj
+bf_editor_space_view3d.dir\Release\view3d_snap.obj
+bf_editor_space_view3d.dir\Release\view3d_toolbar.obj
+bf_editor_space_view3d.dir\Release\view3d_view.obj'
+Message: [1] -> 'bf_blenfont.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenfont.lib'
+Message: [1] -> 'bf_editor_space_view3d.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_view3d.lib'
+Message: [1] -> 'bf_dna_blenlib.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_dna_blenlib.lib'
+Message: [1] -> 'bf_blenlib.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenlib.lib'
+Message: [1] -> 'bf_editor_curve.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_curve.lib'
+   Compiling => "anim_channels_defines.c"
+   Compiling => "anim_channels_edit.c"
+   Compiling => "anim_deps.c"
+   Compiling => "anim_draw.c"
+   Compiling => "anim_filter.c"
+Message: [1] -> 'bf_editor_armature.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_armature.lib'
+   Compiling => "keyframes_draw.c"
+! c:\blenderdev\master2\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (C:\blenderdev\master2\blender\source\blender\depsgraph\intern\builder\deg_builder_nodes.cc)
+   Compiling => "        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array"
+Message: [1] -> 'bf_editor_interface.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_interface.lib'
+! C:\blenderdev\master2\blender\source\blender\blenkernel\BKE_main.h(59): warning C4200: nonstandard extension used : zero-sized array in struct/union (C:\blenderdev\master2\blender\source\blender\depsgraph\intern\builder\deg_builder_nodes.cc)
+   Compiling => "drawgpencil.c"
+   Compiling => "editaction_gpencil.c"
+   Compiling => "gpencil_brush.c"
+   Compiling => "        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array"
+   Compiling => "gpencil_convert.c"
+   Compiling => "gpencil_data.c"
+   Compiling => "gpencil_edit.c"
+Message: [1] -> 'makesdna.vcxproj -> C:\blenderdev\master2\build\bin\Release\makesdna.exe'
+! c:\blenderdev\master2\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (C:\blenderdev\master2\blender\source\blender\depsgraph\intern\builder\deg_builder_relations.cc)
+   Compiling => "gpencil_interpolate.c"
+   Compiling => "        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array"
+   Compiling => "gpencil_ops.c"
+   Compiling => "context.c"
+   Compiling => "gpencil.c"
+! C:\blenderdev\master2\blender\source\blender\blenkernel\BKE_main.h(59): warning C4200: nonstandard extension used : zero-sized array in struct/union (C:\blenderdev\master2\blender\source\blender\depsgraph\intern\builder\deg_builder_relations.cc)
+   Compiling => "        Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array"
+   Compiling => "library.c"
+   Compiling => "library_query.c"
+   Compiling => "library_remap.c"
+Message: [1] -> 'bf_editor_mask.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_mask.lib'
+! C:\blenderdev\master2\blender\source\blender\editors\gpencil\gpencil_edit.c(560): warning C4313: 'printf'  : '%d' in format string conflicts with argument 2 of type 'unsigned char [12]'
+   Compiling => "gpencil_paint.c"
+   Compiling => "gpencil_select.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_animation.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_animation.dir\Release\anim_channels_defines.obj
+bf_editor_animation.dir\Release\anim_channels_edit.obj
+bf_editor_animation.dir\Release\anim_deps.obj
+bf_editor_animation.dir\Release\anim_draw.obj
+bf_editor_animation.dir\Release\anim_filter.obj
+bf_editor_animation.dir\Release\anim_ipo_utils.obj
+bf_editor_animation.dir\Release\anim_markers.obj
+bf_editor_animation.dir\Release\anim_ops.obj
+bf_editor_animation.dir\Release\drivers.obj
+bf_editor_animation.dir\Release\fmodifier_ui.obj
+bf_editor_animation.dir\Release\keyframes_draw.obj
+bf_editor_animation.dir\Release\keyframes_edit.obj
+bf_editor_animation.dir\Release\keyframes_general.obj
+bf_editor_animation.dir\Release\keyframing.obj
+bf_editor_animation.dir\Release\keyingsets.obj'
+   Compiling => "gpencil_undo.c"
+   Compiling => "gpencil_utils.c"
+   Compiling => "object.c"
+   Compiling => "scene.c"
+! c:\blenderdev\master2\blender\source\blender\editors\gpencil\gpencil_edit.c(560): warning C4700: uninitialized local variable 'd1' used
+Message: [1] -> 'bf_editor_metaball.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_metaball.lib'
+   Compiling => "tracking.c"
+   Compiling => "tracking_detect.c"
+Message: [1] -> 'bf_editor_animation.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_animation.lib'
+Message: [1] -> 'bf_editor_mesh.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_mesh.lib'
+Message: [1] -> 'bf_editor_io.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_io.lib'
+Message: [1] -> 'bf_editor_sound.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_sound.lib'
+Message: [1] -> 'bf_editor_physics.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_physics.lib'
+Message: [1] -> 'bf_editor_sculpt_paint.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_sculpt_paint.lib'
+   Compiling => "object_add.c"
+   Compiling => "action_data.c"
+   Compiling => "object_edit.c"
+   Compiling => "action_edit.c"
+   Compiling => "action_select.c"
+   Compiling => "object_relations.c"
+CustomBuild: [1] -> 'Generating dna.c, dna_type_offsets.h'
+Message: [1] -> 'bf_editor_space_api.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_api.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_depsgraph.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_depsgraph.dir\Release\deg_builder.obj
+bf_depsgraph.dir\Release\deg_builder_cycle.obj
+bf_depsgraph.dir\Release\deg_builder_nodes.obj
+bf_depsgraph.dir\Release\deg_builder_nodes_rig.obj
+bf_depsgraph.dir\Release\deg_builder_nodes_scene.obj
+bf_depsgraph.dir\Release\deg_builder_pchanmap.obj
+bf_depsgraph.dir\Release\deg_builder_relations.obj
+bf_depsgraph.dir\Release\deg_builder_relations_keys.obj
+bf_depsgraph.dir\Release\deg_builder_relations_rig.obj
+bf_depsgraph.dir\Release\deg_builder_relations_scene.obj
+bf_depsgraph.dir\Release\deg_builder_transitive.obj
+bf_depsgraph.dir\Release\deg_debug_graphviz.obj
+bf_depsgraph.dir\Release\deg_eval.obj
+bf_depsgraph.dir\Release\deg_eval_debug.obj
+bf_depsgraph.dir\Release\deg_eval_flush.obj
+bf_depsgraph.dir\Release\deg_node.obj
+bf_depsgraph.dir\Release\deg_node_component.obj
+bf_depsgraph.dir\Release\deg_node_operation.obj
+bf_depsgraph.dir\Release\depsgraph.obj
+bf_depsgraph.dir\Release\depsgraph_build.obj
+bf_depsgraph.dir\Release\depsgraph_debug.obj
+bf_depsgraph.dir\Release\depsgraph_eval.obj
+bf_depsgraph.dir\Release\depsgraph_query.obj
+bf_depsgraph.dir\Release\depsgraph_tag.obj
+bf_depsgraph.dir\Release\depsgraph_type_defines.obj'
+CustomBuild: [1] -> 'Running makesdna at debug level 0'
+CustomBuild: [1] -> 'Writing file ... done.'
+Message: [1] -> 'bf_depsgraph.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_depsgraph.lib'
+Message: [1] -> 'bf_editor_space_buttons.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_buttons.lib'
+   Compiling => "dna.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_action.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_action.dir\Release\action_buttons.obj
+bf_editor_space_action.dir\Release\action_data.obj
+bf_editor_space_action.dir\Release\action_draw.obj
+bf_editor_space_action.dir\Release\action_edit.obj
+bf_editor_space_action.dir\Release\action_ops.obj
+bf_editor_space_action.dir\Release\action_select.obj
+bf_editor_space_action.dir\Release\space_action.obj'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_gpencil.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_gpencil.dir\Release\drawgpencil.obj
+bf_editor_gpencil.dir\Release\editaction_gpencil.obj
+bf_editor_gpencil.dir\Release\gpencil_brush.obj
+bf_editor_gpencil.dir\Release\gpencil_convert.obj
+bf_editor_gpencil.dir\Release\gpencil_data.obj
+bf_editor_gpencil.dir\Release\gpencil_edit.obj
+bf_editor_gpencil.dir\Release\gpencil_interpolate.obj
+bf_editor_gpencil.dir\Release\gpencil_ops.obj
+bf_editor_gpencil.dir\Release\gpencil_paint.obj
+bf_editor_gpencil.dir\Release\gpencil_select.obj
+bf_editor_gpencil.dir\Release\gpencil_undo.obj
+bf_editor_gpencil.dir\Release\gpencil_utils.obj'
+Message: [1] -> 'bf_editor_space_console.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_console.lib'
+Message: [1] -> 'bf_editor_space_graph.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_graph.lib'
+Message: [1] -> 'bf_editor_space_action.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_action.lib'
+Message: [1] -> 'bf_editor_gpencil.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_gpencil.lib'
+   Compiling => "clip_draw.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_object.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_object.dir\Release\object_add.obj
+bf_editor_object.dir\Release\object_bake.obj
+bf_editor_object.dir\Release\object_bake_api.obj
+bf_editor_object.dir\Release\object_constraint.obj
+bf_editor_object.dir\Release\object_edit.obj
+bf_editor_object.dir\Release\object_group.obj
+bf_editor_object.dir\Release\object_hook.obj
+bf_editor_object.dir\Release\object_lattice.obj
+bf_editor_object.dir\Release\object_lod.obj
+bf_editor_object.dir\Release\object_modifier.obj
+bf_editor_object.dir\Release\object_ops.obj
+bf_editor_object.dir\Release\object_random.obj
+bf_editor_object.dir\Release\object_relations.obj
+bf_editor_object.dir\Release\object_select.obj
+bf_editor_object.dir\Release\object_shapekey.obj
+bf_editor_object.dir\Release\object_data_transfer.obj
+bf_editor_object.dir\Release\object_transform.obj
+bf_editor_object.dir\Release\object_warp.obj
+bf_editor_object.dir\Release\object_vgroup.obj'
+   Compiling => "tracking_ops_detect.c"
+   Compiling => "space_image.c"
+Message: [1] -> 'bf_editor_space_info.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_info.lib'
+Message: [1] -> 'bf_editor_space_nla.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_nla.lib'
+Message: [1] -> 'bf_editor_object.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_object.lib'
+   Compiling => "space_logic.c"
+   Compiling => "space_node.c"
+Message: [1] -> 'bf_editor_space_script.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_script.lib'
+   Compiling => "outliner_draw.c"
+   Compiling => "outliner_tools.c"
+   Compiling => "outliner_tree.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_blenkernel.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_blenkernel.dir\Release\CCGSubSurf.obj
+bf_blenkernel.dir\Release\CCGSubSurf_legacy.obj
+bf_blenkernel.dir\Release\CCGSubSurf_opensubdiv.obj
+bf_blenkernel.dir\Release\CCGSubSurf_opensubdiv_converter.obj
+bf_blenkernel.dir\Release\CCGSubSurf_util.obj
+bf_blenkernel.dir\Release\DerivedMesh.obj
+bf_blenkernel.dir\Release\action.obj
+bf_blenkernel.dir\Release\addon.obj
+bf_blenkernel.dir\Release\anim.obj
+bf_blenkernel.dir\Release\anim_sys.obj
+bf_blenkernel.dir\Release\appdir.obj
+bf_blenkernel.dir\Release\armature.obj
+bf_blenkernel.dir\Release\armature_update.obj
+bf_blenkernel.dir\Release\autoexec.obj
+bf_blenkernel.dir\Release\blender.obj
+bf_blenkernel.dir\Release\blender_copybuffer.obj
+bf_blenkernel.dir\Release\blender_undo.obj
+bf_blenkernel.dir\Release\blendfile.obj
+bf_blenkernel.dir\Release\bmfont.obj
+bf_blenkernel.dir\Release\boids.obj
+bf_blenkernel.dir\Release\bpath.obj
+bf_blenkernel.dir\Release\brush.obj
+bf_blenkernel.dir\Release\bullet.obj
+bf_blenkernel.dir\Release\bvhutils.obj
+bf_blenkernel.dir\Release\cachefile.obj
+bf_blenkernel.dir\Release\camera.obj
+bf_blenkernel.dir\Release\cdderivedmesh.obj
+bf_blenkernel.dir\Release\cloth.obj
+bf_blenkernel.dir\Release\collision.obj
+bf_blenkernel.dir\Release\colortools.obj
+bf_blenkernel.dir\Release\constraint.obj
+bf_blenkernel.dir\Release\context.obj
+bf_blenkernel.dir\Release\crazyspace.obj
+bf_blenkernel.dir\Release\curve.obj
+bf_blenkernel.dir\Release\customdata.obj
+bf_blenkernel.dir\Release\customdata_file.obj
+bf_blenkernel.dir\Release\data_transfer.obj
+bf_blenkernel.dir\Release\deform.obj
+bf_blenkernel.dir\Release\depsgraph.obj
+bf_blenkernel.dir\Release\displist.obj
+bf_blenkernel.dir\Release\dynamicpaint.obj
+bf_blenkernel.dir\Release\editderivedmesh.obj
+bf_blenkernel.dir\Release\editmesh.obj
+bf_blenkernel.dir\Release\editmesh_bvh.obj
+bf_blenkernel.dir\Release\effect.obj
+bf_blenkernel.dir\Release\fcurve.obj
+bf_blenkernel.dir\Release\fluidsim.obj
+bf_blenkernel.dir\Release\fmodifier.obj
+bf_blenkernel.dir\Release\font.obj
+bf_blenkernel.dir\Release\freestyle.obj
+bf_blenkernel.dir\Release\gpencil.obj
+bf_blenkernel.dir\Release\group.obj
+bf_blenkernel.dir\Release\icons.obj
+bf_blenkernel.dir\Release\idcode.obj
+bf_blenkernel.dir\Release\idprop.obj
+bf_blenkernel.dir\Release\image.obj
+bf_blenkernel.dir\Release\image_gen.obj
+bf_blenkernel.dir\Release\ipo.obj
+bf_blenkernel.dir\Release\key.obj
+bf_blenkernel.dir\Release\lamp.obj
+bf_blenkernel.dir\Release\lattice.obj
+bf_blenkernel.dir\Release\library.obj
+bf_blenkernel.dir\Release\library_idmap.obj
+bf_blenkernel.dir\Release\library_query.obj
+bf_blenkernel.dir\Release\library_remap.obj
+bf_blenkernel.dir\Release\linestyle.obj
+bf_blenkernel.dir\Release\mask.obj
+bf_blenkernel.dir\Release\mask_evaluate.obj
+bf_blenkernel.dir\Release\mask_rasterize.obj
+bf_blenkernel.dir\Release\material.obj
+bf_blenkernel.dir\Release\mball.obj
+bf_blenkernel.dir\Release\mball_tessellate.obj
+bf_blenkernel.dir\Release\mesh.obj
+bf_blenkernel.dir\Release\mesh_evaluate.obj
+bf_blenkernel.dir\Release\mesh_mapping.obj
+bf_blenkernel.dir\Release\mesh_remap.obj
+bf_blenkernel.dir\Release\mesh_validate.obj
+bf_blenkernel.dir\Release\modifier.obj
+bf_blenkernel.dir\Release\modifiers_bmesh.obj
+bf_blenkernel.dir\Release\movieclip.obj
+bf_blenkernel.dir\Release\multires.obj
+bf_blenkernel.dir\Release\nla.obj
+bf_blenkernel.dir\Release\node.obj
+bf_blenkernel.dir\Release\object.obj
+bf_blenkernel.dir\Release\object_deform.obj
+bf_blenkernel.dir\Release\object_dupli.obj
+bf_blenkernel.dir\Release\object_update.obj
+bf_blenkernel.dir\Release\ocean.obj
+bf_blenkernel.dir\Release\outliner_treehash.obj
+bf_blenkernel.dir\Release\packedFile.obj
+bf_blenkernel.dir\Release\paint.obj
+bf_blenkernel.dir\Release\particle.obj
+bf_blenkernel.dir\Release\particle_child.obj
+bf_blenkernel.dir\Release\particle_distribute.obj
+bf_blenkernel.dir\Release\particle_system.obj
+bf_blenkernel.dir\Release\pbvh.obj
+bf_blenkernel.dir\Release\pbvh_bmesh.obj
+bf_blenkernel.dir\Release\pointcache.obj
+bf_blenkernel.dir\Release\property.obj
+bf_blenkernel.dir\Release\report.obj
+bf_blenkernel.dir\Release\rigidbody.obj
+bf_blenkernel.dir\Release\sca.obj
+bf_blenkernel.dir\Release\scene.obj
+bf_blenkernel.dir\Release\screen.obj
+bf_blenkernel.dir\Release\seqcache.obj
+bf_blenkernel.dir\Release\seqeffects.obj
+bf_blenkernel.dir\Release\seqmodifier.obj
+bf_blenkernel.dir\Release\sequencer.obj
+bf_blenkernel.dir\Release\shrinkwrap.obj
+bf_blenkernel.dir\Release\sketch.obj
+bf_blenkernel.dir\Release\smoke.obj
+bf_blenkernel.dir\Release\softbody.obj
+bf_blenkernel.dir\Release\sound.obj
+bf_blenkernel.dir\Release\speaker.obj
+bf_blenkernel.dir\Release\subsurf_ccg.obj
+bf_blenkernel.dir\Release\suggestions.obj
+bf_blenkernel.dir\Release\text.obj
+bf_blenkernel.dir\Release\texture.obj
+bf_blenkernel.dir\Release\tracking.obj
+bf_blenkernel.dir\Release\tracking_auto.obj
+bf_blenkernel.dir\Release\tracking_detect.obj
+bf_blenkernel.dir\Release\tracking_plane_tracker.obj
+bf_blenkernel.dir\Release\tracking_region_tracker.obj
+bf_blenkernel.dir\Release\tracking_solver.obj
+bf_blenkernel.dir\Release\tracking_stabilize.obj
+bf_blenkernel.dir\Release\tracking_util.obj
+bf_blenkernel.dir\Release\unit.obj
+bf_blenkernel.dir\Release\world.obj
+bf_blenkernel.dir\Release\writeavi.obj
+bf_blenkernel.dir\Release\writeframeserver.obj
+bf_blenkernel.dir\Release\writeffmpeg.obj'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_image.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_image.dir\Release\image_buttons.obj
+bf_editor_space_image.dir\Release\image_draw.obj
+bf_editor_space_image.dir\Release\image_edit.obj
+bf_editor_space_image.dir\Release\image_ops.obj
+bf_editor_space_image.dir\Release\space_image.obj'
+   Compiling => "space_sequencer.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_clip.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_clip.dir\Release\clip_buttons.obj
+bf_editor_space_clip.dir\Release\clip_dopesheet_draw.obj
+bf_editor_space_clip.dir\Release\clip_dopesheet_ops.obj
+bf_editor_space_clip.dir\Release\clip_draw.obj
+bf_editor_space_clip.dir\Release\clip_editor.obj
+bf_editor_space_clip.dir\Release\clip_graph_draw.obj
+bf_editor_space_clip.dir\Release\clip_graph_ops.obj
+bf_editor_space_clip.dir\Release\clip_ops.obj
+bf_editor_space_clip.dir\Release\clip_toolbar.obj
+bf_editor_space_clip.dir\Release\clip_utils.obj
+bf_editor_space_clip.dir\Release\space_clip.obj
+bf_editor_space_clip.dir\Release\tracking_ops.obj
+bf_editor_space_clip.dir\Release\tracking_ops_detect.obj
+bf_editor_space_clip.dir\Release\tracking_ops_orient.obj
+bf_editor_space_clip.dir\Release\tracking_ops_plane.obj
+bf_editor_space_clip.dir\Release\tracking_ops_solve.obj
+bf_editor_space_clip.dir\Release\tracking_ops_track.obj
+bf_editor_space_clip.dir\Release\tracking_ops_stabilize.obj
+bf_editor_space_clip.dir\Release\tracking_ops_utils.obj
+bf_editor_space_clip.dir\Release\tracking_select.obj'
+Message: [1] -> 'bf_editor_space_text.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_text.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_logic.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_logic.dir\Release\logic_buttons.obj
+bf_editor_space_logic.dir\Release\logic_ops.obj
+bf_editor_space_logic.dir\Release\logic_window.obj
+bf_editor_space_logic.dir\Release\space_logic.obj'
+Message: [1] -> 'bf_editor_space_image.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_image.lib'
+Message: [1] -> 'bf_editor_space_clip.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_clip.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_node.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_node.dir\Release\drawnode.obj
+bf_editor_space_node.dir\Release\node_add.obj
+bf_editor_space_node.dir\Release\node_buttons.obj
+bf_editor_space_node.dir\Release\node_draw.obj
+bf_editor_space_node.dir\Release\node_edit.obj
+bf_editor_space_node.dir\Release\node_group.obj
+bf_editor_space_node.dir\Release\node_ops.obj
+bf_editor_space_node.dir\Release\node_relationships.obj
+bf_editor_space_node.dir\Release\node_select.obj
+bf_editor_space_node.dir\Release\node_templates.obj
+bf_editor_space_node.dir\Release\node_toolbar.obj
+bf_editor_space_node.dir\Release\node_view.obj
+bf_editor_space_node.dir\Release\space_node.obj'
+Message: [1] -> 'bf_editor_space_logic.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_logic.lib'
+Message: [1] -> 'bf_blenkernel.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenkernel.lib'
+   Compiling => "space_time.c"
+Message: [1] -> 'bf_editor_uvedit.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_uvedit.lib'
+Message: [1] -> 'bf_editor_space_node.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_node.lib'
+Message: [1] -> 'bf_editor_util.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_util.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_sequencer.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_sequencer.dir\Release\sequencer_add.obj
+bf_editor_space_sequencer.dir\Release\sequencer_buttons.obj
+bf_editor_space_sequencer.dir\Release\sequencer_draw.obj
+bf_editor_space_sequencer.dir\Release\sequencer_edit.obj
+bf_editor_space_sequencer.dir\Release\sequencer_modifier.obj
+bf_editor_space_sequencer.dir\Release\sequencer_ops.obj
+bf_editor_space_sequencer.dir\Release\sequencer_preview.obj
+bf_editor_space_sequencer.dir\Release\sequencer_scopes.obj
+bf_editor_space_sequencer.dir\Release\sequencer_select.obj
+bf_editor_space_sequencer.dir\Release\sequencer_view.obj
+bf_editor_space_sequencer.dir\Release\space_sequencer.obj'
+   Compiling => "transform_conversions.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_outliner.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_outliner.dir\Release\outliner_draw.obj
+bf_editor_space_outliner.dir\Release\outliner_edit.obj
+bf_editor_space_outliner.dir\Release\outliner_ops.obj
+bf_editor_space_outliner.dir\Release\outliner_select.obj
+bf_editor_space_outliner.dir\Release\outliner_tools.obj
+bf_editor_space_outliner.dir\Release\outliner_tree.obj
+bf_editor_space_outliner.dir\Release\space_outliner.obj'
+   Compiling => "transform_generics.c"
+   Compiling => "transform_manipulator.c"
+Message: [1] -> 'bf_editor_space_outliner.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_outliner.lib'
+Message: [1] -> 'bf_editor_space_sequencer.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_sequencer.lib'
+Message: [1] -> 'bf_ikplugin.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_ikplugin.lib'
+Message: [1] -> 'bf_intern_audaspace.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_audaspace.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_dna.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_dna.dir\Release\dna_genfile.obj
+bf_dna.dir\Release\dna.obj'
+Message: [1] -> 'bf_intern_decklink.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_decklink.lib'
+Message: [1] -> 'bf_dna.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_dna.lib'
+Message: [1] -> 'bf_intern_eigen.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_eigen.lib'
+Message: [1] -> 'bf_intern_ghost.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_ghost.lib'
+Message: [1] -> 'bf_freestyle.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_freestyle.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_space_time.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_space_time.dir\Release\space_time.obj
+bf_editor_space_time.dir\Release\time_ops.obj'
+Message: [1] -> 'bf_intern_gpudirect.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_gpudirect.lib'
+Message: [1] -> 'bf_intern_glew_mx.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_glew_mx.lib'
+Message: [1] -> 'bf_intern_guardedalloc.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_guardedalloc.lib'
+Message: [1] -> 'bf_editor_space_time.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_space_time.lib'
+Message: [1] -> 'bf_intern_iksolver.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_iksolver.lib'
+Message: [1] -> 'bf_intern_mikktspace.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_mikktspace.lib'
+Message: [1] -> 'bf_intern_itasc.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_itasc.lib'
+Message: [1] -> 'bf_intern_memutil.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_memutil.lib'
+Message: [1] -> 'bf_intern_moto.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_moto.lib'
+Message: [1] -> 'bf_intern_rigidbody.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_rigidbody.lib'
+Message: [1] -> 'bf_intern_libmv.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_libmv.lib'
+Message: [1] -> 'bf_gpu.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_gpu.lib'
+   Compiling => "readfile.c"
+   Compiling => "versioning_270.c"
+   Compiling => "writefile.c"
+Message: [1] -> 'bf_intern_utfconv.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_utfconv.lib'
+Message: [1] -> 'bf_intern_string.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_intern_string.lib'
+Message: [1] -> 'bf_physics.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_physics.lib'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_editor_transform.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_editor_transform.dir\Release\transform.obj
+bf_editor_transform.dir\Release\transform_constraints.obj
+bf_editor_transform.dir\Release\transform_conversions.obj
+bf_editor_transform.dir\Release\transform_generics.obj
+bf_editor_transform.dir\Release\transform_input.obj
+bf_editor_transform.dir\Release\transform_manipulator.obj
+bf_editor_transform.dir\Release\transform_ops.obj
+bf_editor_transform.dir\Release\transform_orientations.obj
+bf_editor_transform.dir\Release\transform_snap.obj
+bf_editor_transform.dir\Release\transform_snap_object.obj'
+Message: [1] -> 'bf_python_bmesh.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python_bmesh.lib'
+Message: [1] -> 'bf_python.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python.lib'
+   Compiling => "rna_gpencil.c"
+   Compiling => "rna_scene.c"
+Message: [1] -> 'bf_python_ext.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python_ext.lib'
+Message: [1] -> 'bf_editor_transform.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_transform.lib'
+Message: [1] -> 'bf_render.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_render.lib'
+Message: [1] -> 'bf_python_mathutils.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_python_mathutils.lib'
+Message: [1] -> 'bf_nodes.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_nodes.lib'
+Message: [1] -> 'bf_windowmanager.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_windowmanager.lib'
+CustomBuild: [1] -> 'Generating buildinfo.h_fake, buildinfo.h'
+Message: [1] -> 'datatoc_icon.vcxproj -> C:\blenderdev\master2\build\bin\Release\datatoc_icon.exe'
+Message: [1] -> 'extern_glew.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_glew.lib'
+Message: [1] -> 'extern_bullet.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_bullet.lib'
+Message: [1] -> 'extern_gflags.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_gflags.lib'
+Message: [1] -> 'extern_ceres.vcxproj -> C:\blenderdev\master2\build\lib\Release\extern_ceres.lib'
+   Compiling => "buildinfo.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_blenloader.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_blenloader.dir\Release\readblenentry.obj
+bf_blenloader.dir\Release\readfile.obj
+bf_blenloader.dir\Release\runtime.obj
+bf_blenloader.dir\Release\undofile.obj
+bf_blenloader.dir\Release\versioning_250.obj
+bf_blenloader.dir\Release\versioning_260.obj
+bf_blenloader.dir\Release\versioning_270.obj
+bf_blenloader.dir\Release\versioning_defaults.obj
+bf_blenloader.dir\Release\versioning_legacy.obj
+bf_blenloader.dir\Release\writefile.obj'
+Message: [1] -> 'bf_blenloader.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_blenloader.lib'
+Message: [1] -> 'bf_editor_datafiles.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_editor_datafiles.lib'
+Message: [1] -> 'makesrna.vcxproj -> C:\blenderdev\master2\build\bin\Release\makesrna.exe'
+CustomBuild: [1] -> 'Generating rna_ID_gen.c, rna_action_gen.c, rna_actuator_gen.c, rna_animation_gen.c, rna_animviz_gen.c, rna_armature_gen.c, rna_boid_gen.c, rna_brush_gen.c, rna_cachefile_gen.c, rna_camera_gen.c, rna_cloth_gen.c, rna_color_gen.c, rna_constraint_gen.c, rna_context_gen.c, rna_controller_gen.c, rna_curve_gen.c, rna_depsgraph_gen.c, rna_dynamicpaint_gen.c, rna_fcurve_gen.c, rna_fluidsim_gen.c, rna_gpencil_gen.c, rna_group_gen.c, rna_image_gen.c, rna_key_gen.c, rna_lamp_gen.c, rna_lattice_gen.c, rna_linestyle_gen.c, rna_main_gen.c, rna_mask_gen.c, rna_material_gen.c, rna_mesh_gen.c, rna_meta_gen.c, rna_modifier_gen.c, rna_movieclip_gen.c, rna_nla_gen.c, rna_nodetree_gen.c, rna_object_gen.c, rna_object_force_gen.c, rna_packedfile_gen.c, rna_palette_gen.c, rna_particle_gen.c, rna_pose_gen.c, rna_property_gen.c, rna_render_gen.c, rna_rigidbody_gen.c, rna_rna_gen.c, rna_scene_gen.c, rna_screen_gen.c, rna_sculpt_paint_gen.c, rna_sensor_gen.c, rna_sequencer_gen.c, rna_smoke_gen.c, rna_sound_gen.c, rna_space_gen.c, rna_speaker_gen.c, rna_test_gen.c, rna_text_gen.c, rna_texture_gen.c, rna_timeline_gen.c, rna_tracking_gen.c, rna_ui_gen.c, rna_userdef_gen.c, rna_vfont_gen.c, rna_wm_gen.c, rna_world_gen.c, rna_prototypes_gen.h'
+CustomBuild: [1] -> 'Running makesrna'
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"buildinfoobj.dir\Release\buildinfoobj.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 buildinfoobj.dir\Release\buildinfo.obj'
+   Compiling => "rna_ID_gen.c"
+Message: [1] -> 'buildinfoobj.vcxproj -> C:\blenderdev\master2\build\source\creator\buildinfoobj.dir\Release\buildinfoobj.lib'
+   Compiling => "rna_action_gen.c"
+   Compiling => "rna_actuator_gen.c"
+   Compiling => "rna_animation_gen.c"
+   Compiling => "rna_animviz_gen.c"
+   Compiling => "rna_armature_gen.c"
+   Compiling => "rna_boid_gen.c"
+   Compiling => "rna_brush_gen.c"
+   Compiling => "rna_cachefile_gen.c"
+   Compiling => "rna_camera_gen.c"
+   Compiling => "rna_cloth_gen.c"
+   Compiling => "rna_color_gen.c"
+   Compiling => "rna_constraint_gen.c"
+   Compiling => "rna_context_gen.c"
+   Compiling => "rna_controller_gen.c"
+   Compiling => "rna_curve_gen.c"
+   Compiling => "rna_depsgraph_gen.c"
+   Compiling => "rna_dynamicpaint_gen.c"
+   Compiling => "rna_fcurve_gen.c"
+   Compiling => "rna_fluidsim_gen.c"
+   Compiling => "rna_gpencil_gen.c"
+   Compiling => "rna_group_gen.c"
+   Compiling => "rna_image_gen.c"
+   Compiling => "rna_key_gen.c"
+   Compiling => "rna_lamp_gen.c"
+   Compiling => "rna_lattice_gen.c"
+   Compiling => "rna_linestyle_gen.c"
+   Compiling => "rna_main_gen.c"
+   Compiling => "rna_mask_gen.c"
+   Compiling => "rna_material_gen.c"
+   Compiling => "rna_mesh_gen.c"
+   Compiling => "rna_meta_gen.c"
+   Compiling => "rna_modifier_gen.c"
+   Compiling => "rna_movieclip_gen.c"
+   Compiling => "rna_nla_gen.c"
+   Compiling => "rna_nodetree_gen.c"
+   Compiling => "rna_object_force_gen.c"
+   Compiling => "rna_object_gen.c"
+   Compiling => "rna_packedfile_gen.c"
+   Compiling => "rna_palette_gen.c"
+   Compiling => "rna_particle_gen.c"
+   Compiling => "rna_pose_gen.c"
+   Compiling => "rna_property_gen.c"
+   Compiling => "rna_render_gen.c"
+   Compiling => "rna_rigidbody_gen.c"
+   Compiling => "rna_rna_gen.c"
+   Compiling => "rna_scene_gen.c"
+   Compiling => "rna_screen_gen.c"
+   Compiling => "rna_sculpt_paint_gen.c"
+   Compiling => "rna_sensor_gen.c"
+   Compiling => "rna_sequencer_gen.c"
+   Compiling => "rna_smoke_gen.c"
+   Compiling => "rna_sound_gen.c"
+   Compiling => "rna_space_gen.c"
+   Compiling => "rna_speaker_gen.c"
+   Compiling => "rna_test_gen.c"
+   Compiling => "rna_text_gen.c"
+   Compiling => "rna_texture_gen.c"
+   Compiling => "rna_timeline_gen.c"
+   Compiling => "rna_tracking_gen.c"
+   Compiling => "rna_ui_gen.c"
+   Compiling => "rna_userdef_gen.c"
+   Compiling => "rna_vfont_gen.c"
+   Compiling => "rna_wm_gen.c"
+   Compiling => "rna_world_gen.c"
+LIB: [1] -> 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\blenderdev\master2\build\lib\Release\bf_rna.lib" /NOLOGO /MACHINE:X64  /machine:x64 /ignore:4221 bf_rna.dir\Release\rna_access.obj
+bf_rna.dir\Release\rna_ID_gen.obj
+bf_rna.dir\Release\rna_action_gen.obj
+bf_rna.dir\Release\rna_actuator_gen.obj
+bf_rna.dir\Release\rna_animation_gen.obj
+bf_rna.dir\Release\rna_animviz_gen.obj
+bf_rna.dir\Release\rna_armature_gen.obj
+bf_rna.dir\Release\rna_boid_gen.obj
+bf_rna.dir\Release\rna_brush_gen.obj
+bf_rna.dir\Release\rna_cachefile_gen.obj
+bf_rna.dir\Release\rna_camera_gen.obj
+bf_rna.dir\Release\rna_cloth_gen.obj
+bf_rna.dir\Release\rna_color_gen.obj
+bf_rna.dir\Release\rna_constraint_gen.obj
+bf_rna.dir\Release\rna_context_gen.obj
+bf_rna.dir\Release\rna_controller_gen.obj
+bf_rna.dir\Release\rna_curve_gen.obj
+bf_rna.dir\Release\rna_depsgraph_gen.obj
+bf_rna.dir\Release\rna_dynamicpaint_gen.obj
+bf_rna.dir\Release\rna_fcurve_gen.obj
+bf_rna.dir\Release\rna_fluidsim_gen.obj
+bf_rna.dir\Release\rna_gpencil_gen.obj
+bf_rna.dir\Release\rna_group_gen.obj
+bf_rna.dir\Release\rna_image_gen.obj
+bf_rna.dir\Release\rna_key_gen.obj
+bf_rna.dir\Release\rna_lamp_gen.obj
+bf_rna.dir\Release\rna_lattice_gen.obj
+bf_rna.dir\Release\rna_linestyle_gen.obj
+bf_rna.dir\Release\rna_main_gen.obj
+bf_rna.dir\Release\rna_mask_gen.obj
+bf_rna.dir\Release\rna_material_gen.obj
+bf_rna.dir\Release\rna_mesh_gen.obj
+bf_rna.dir\Release\rna_meta_gen.obj
+bf_rna.dir\Release\rna_modifier_gen.obj
+bf_rna.dir\Release\rna_movieclip_gen.obj
+bf_rna.dir\Release\rna_nla_gen.obj
+bf_rna.dir\Release\rna_nodetree_gen.obj
+bf_rna.dir\Release\rna_object_gen.obj
+bf_rna.dir\Release\rna_object_force_gen.obj
+bf_rna.dir\Release\rna_packedfile_gen.obj
+bf_rna.dir\Release\rna_palette_gen.obj
+bf_rna.dir\Release\rna_particle_gen.obj
+bf_rna.dir\Release\rna_pose_gen.obj
+bf_rna.dir\Release\rna_property_gen.obj
+bf_rna.dir\Release\rna_render_gen.obj
+bf_rna.dir\Release\rna_rigidbody_gen.obj
+bf_rna.dir\Release\rna_rna_gen.obj
+bf_rna.dir\Release\rna_scene_gen.obj
+bf_rna.dir\Release\rna_screen_gen.obj
+bf_rna.dir\Release\rna_sculpt_paint_gen.obj
+bf_rna.dir\Release\rna_sensor_gen.obj
+bf_rna.dir\Release\rna_sequencer_gen.obj
+bf_rna.dir\Release\rna_smoke_gen.obj
+bf_rna.dir\Release\rna_sound_gen.obj
+bf_rna.dir\Release\rna_space_gen.obj
+bf_rna.dir\Release\rna_speaker_gen.obj
+bf_rna.dir\Release\rna_test_gen.obj
+bf_rna.dir\Release\rna_text_gen.obj
+bf_rna.dir\Release\rna_texture_gen.obj
+bf_rna.dir\Release\rna_timeline_gen.obj
+bf_rna.dir\Release\rna_tracking_gen.obj
+bf_rna.dir\Release\rna_ui_gen.obj
+bf_rna.dir\Release\rna_userdef_gen.obj
+bf_rna.dir\Release\rna_vfont_gen.obj
+bf_rna.dir\Release\rna_wm_gen.obj
+bf_rna.dir\Release\rna_world_gen.obj'
+Message: [1] -> 'bf_rna.vcxproj -> C:\blenderdev\master2\build\lib\Release\bf_rna.lib'
+   Compiling => "buildinfo.c"
+   Creating library C:/blenderdev/master2/build/bin/Release/blender.lib and object C:/blenderdev/master2/build/bin/Release/blender.exp
+Message: [1] -> 'blender.vcxproj -> C:\blenderdev\master2\build\bin\Release\blender.exe'
+Build succeeded.                                                                                                       
+  6 Warning(s)
+  0 Error(s)
+
+Blender successfully built, run from: "C:\blenderdev\master2\blender\..\build\bin\Release"
+
