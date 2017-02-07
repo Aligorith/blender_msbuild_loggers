@@ -247,17 +247,39 @@ public class CustomLogger: Logger
 	private void handleBuildFinished(object sender, BuildFinishedEventArgs e)
 	{
 		if (errors == 0) {
-			WriteShadedLine("Build succeeded.", ConsoleColor.DarkGreen, ConsoleColor.White);
+			WriteShadedLine(">> Build succeeded.", ConsoleColor.DarkGreen, ConsoleColor.White);
 		}
 		else {
-			WriteShadedLine("Build failed.", ConsoleColor.Red, ConsoleColor.Black);
+			WriteShadedLine(">> Build failed.", ConsoleColor.Red, ConsoleColor.Black);
 		}
-		Console.WriteLine( String.Format( "  {0} Warning(s)", warnings ) );
-		Console.WriteLine( String.Format( "  {0} Error(s)", errors ) );
+		
+		var warnings_str = String.Format("    {0} Warning(s)", warnings);
+		if (warnings > 0) {
+			WriteColoredLine(warnings_str, ConsoleColor.Yellow);
+		}
+		else {
+			Console.WriteLine(warnings_str);
+		}
+		
+		var errors_str   = String.Format("    {0} Error(s)", errors);
+		if (errors > 0) {
+			WriteColoredLine(errors_str, ConsoleColor.Red);
+		}
+		else {
+			Console.WriteLine(errors_str);
+		}
 	}
 	
 	
 	/* Helper functions ------------------------------------------- */
+	
+	/* Write line with colored text only */
+	private void WriteColoredLine(string message, ConsoleColor col)
+	{
+		Console.ForegroundColor = col;
+		Console.WriteLine(message);
+		Console.ResetColor();
+	}
 	
 	/* Write line with partial color fill */
 	private void WriteFilledLine(string message, ConsoleColor bg, ConsoleColor fg)
