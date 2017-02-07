@@ -228,11 +228,34 @@ public class CustomLogger: Logger
 	
 	/* Event Handlers ------------------------------------------------ */
 	
+	/* Helper to simplify the name of the file (from Warnings/Errors) */
+	private string ShortSourcename(string path)
+	{
+		char SEP = System.IO.Path.DirectorySeparatorChar;
+		string[] elems = path.Split(SEP);
+		
+		/* Use grandparent if parent directory is "intern", since there's no useful info there */
+		if (elems[elems.Length - 2] == "intern") {
+			return elems[elems.Length - 3] + SEP + elems[elems.Length - 1];
+		}
+		else {
+			return elems[elems.Length - 2] + SEP + elems[elems.Length - 1];
+		}
+	}
+	
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
 	{
-		WriteShadedLine("! " + FormatWarningEvent(e),
+		//WriteShadedLine("! " + FormatWarningEvent(e),
+		//                ConsoleColor.Yellow, ConsoleColor.Black);
+		
+		string filename = ShortSourcename(e.File);
+		string line = String.Format("! {0}:{1}:{2} - {3}",
+		                            filename, e.LineNumber, e.ColumnNumber, e.Message);
+		
+		WriteShadedLine(line,
 		                ConsoleColor.Yellow, ConsoleColor.Black);
+		
 		warnings++;
 	}
 	
