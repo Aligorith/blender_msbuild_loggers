@@ -287,6 +287,8 @@ public class CustomLogger: Logger
 	
 	private void handleBuildFinished(object sender, BuildFinishedEventArgs e)
 	{
+		Console.WriteLine();
+		
 		if (errors == 0) {
 			WriteShadedLine("# Build succeeded.", ConsoleColor.DarkGreen, ConsoleColor.White);
 		}
