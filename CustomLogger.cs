@@ -246,12 +246,9 @@ public class CustomLogger: Logger
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
 	{
-		//WriteShadedLine("! " + FormatWarningEvent(e),
-		//                ConsoleColor.Yellow, ConsoleColor.Black);
-		
 		string filename = ShortSourcename(e.File);
-		string line = String.Format("! {0}:{1}:{2} - {3}",
-		                            filename, e.LineNumber, e.ColumnNumber, e.Message);
+		string line = String.Format("! {0}:{1} - {2}",
+		                            filename, e.LineNumber, e.Message);
 		
 		WriteShadedLine(line,
 		                ConsoleColor.Yellow, ConsoleColor.Black);
