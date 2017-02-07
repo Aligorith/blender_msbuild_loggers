@@ -13,9 +13,19 @@ using Microsoft.Build.Framework;
 
 public class CustomLogger: Logger
 {
+	/* Logger Config Options ---------------------------------------- */
 	/* Show the raw, unrecognised messages? */
 	const bool SHOW_RAW_MESSAGES = false;
 	
+	/* Stop reporting events after first error? */
+	const bool STOP_AFTER_FIRST_ERROR = true;
+	
+	/* Silence all warnings about zero-sized arrays */
+	// NOTE: This should ideally be done in the build-scripts/configs,
+	// but sometimes when all else fails, a hack here is equally efficient.
+	const bool HIDE_ZEROSIZEDARRAY_WARNINGS = true;
+	
+	/* Logger State ------------------------------------------------- */
 	
 	/* Counters for keeping track of the number of warnings/errors */
 	private uint warnings = 0;
@@ -43,6 +53,13 @@ public class CustomLogger: Logger
 	/* Entrypoint for all "Message" handling */
 	private void handleMessageRaised(object sender, BuildMessageEventArgs e)
 	{
+		/* Do not report any more messages if we've been told to abort after the first error.
+		 * This should stop any further "Compiling => Blah" messages making it harder to see
+		 * the error, even if all the building still goes ahead (since we can't request a stop).
+		 */
+		if ((STOP_AFTER_FIRST_ERROR) && (errors > 0))
+			return;
+		
 		// XXX: We almost NEVER want the really detailed shit here... MSVC can be too bloody noisy (producing lots of garbage) if left unchecked
 		if ( (e.Importance == MessageImportance.High && IsVerbosityAtLeast(LoggerVerbosity.Minimal)) ||
 			 (e.Importance == MessageImportance.Normal && IsVerbosityAtLeast(LoggerVerbosity.Normal)) ||
@@ -91,9 +108,10 @@ public class CustomLogger: Logger
 			/* This isn't strictly a compile string (i.e. name of the file, from first line of CL output),
 			 * but is rather, part of the error/warning strings! So, just shade as if it is one of either.
 			 */
-			// XXX: Color needs work...
-			WriteShadedLine(e.Message,
-			                ConsoleColor.Yellow, ConsoleColor.Black);
+			if (!HIDE_ZEROSIZEDARRAY_WARNINGS || !e.Message.Contains("zero-sized array")) {
+				WriteShadedLine(e.Message,
+				                ConsoleColor.Yellow, ConsoleColor.Black);
+			}
 		}
 		else {
 			if (Verbosity != LoggerVerbosity.Detailed) {
@@ -263,6 +281,12 @@ public class CustomLogger: Logger
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
 	{
+		/* Skip this warning if is one of the ones we don't want to know about */
+		if (HIDE_ZEROSIZEDARRAY_WARNINGS && e.Message.Contains("zero-sized array"))
+			return;
+		
+		
+		/* Warning is ok, prepare to print it... */
 		string filename = ShortSourcename(e.File);
 		string line = String.Format("! {0}:{1} - {3}  [{2}]",
 		                            filename, e.LineNumber, e.Code, e.Message);
