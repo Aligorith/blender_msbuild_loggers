@@ -146,7 +146,7 @@ public class CustomLogger: Logger
 		string libname = FindLibNameFromCmdline(e.Message);
 		
 		if ((libname != null) && (Verbosity != LoggerVerbosity.Detailed)) {
-			string line = String.Format("  Linking Lib => \"{0}\"",
+			string line = String.Format("   Linking Lib => \"{0}\"",
 				                            libname);
 				
 			WriteFilledLine(line,
