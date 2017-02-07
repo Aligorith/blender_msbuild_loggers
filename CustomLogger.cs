@@ -109,7 +109,7 @@ public class CustomLogger: Logger
 		if (outPos == -1) {
 			return null;
 		}
-				
+		
 		
 		/* 2) Apply offset to get the start of the path (to the lib) */
 		var startPos = outPos + start_tag.Length;
@@ -133,16 +133,17 @@ public class CustomLogger: Logger
 		/* Extract out the filename from the "OUT" parameter */
 		string libname = FindLibNameFromCmdline(e.Message);
 		
-		if (libname != null) {
+		if ((libname != null) && (Verbosity != LoggerVerbosity.Detailed)) {
 			string line = String.Format("  Linking Lib => \"{0}\"",
-				                            e.Message);
+				                            libname);
 				
-			//WriteFilledLine(line,
-			//                ConsoleColor.DarkBlue, ConsoleColor.White);
-			Console.WriteLine(line);
+			WriteFilledLine(line,
+			                ConsoleColor.DarkBlue, ConsoleColor.White);
 		}
 		else {
-			Console.WriteLine(String.Format("LIB: {0}", e.Message));
+			string line = String.Format("LIB: {0}", e.Message);
+			WriteFilledLine(line,
+			                ConsoleColor.DarkBlue, ConsoleColor.White);
 		}
 	}
 	
