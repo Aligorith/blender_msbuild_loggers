@@ -32,4 +32,7 @@ csc FindLibNameFromCmdline.cs
 echo ConsoleColors.cs
 csc ConsoleColors.cs
 
+echo SourceShortname.cs
+csc SourceShortname.cs
+
 
