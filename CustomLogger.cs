@@ -1,12 +1,27 @@
+/* Custom MSBuild Logger for compiling Blender using MSVC
+ * with cleaner + simpler build outputs.
+ *
+ * Original Author: Joshua Leung
+ * Date: Feb 2017
+ */
+
 using System;
 using System.IO;
 using Microsoft.Build.Utilities;
 using Microsoft.Build.Framework;
- 
+
+
 public class CustomLogger: Logger
 {
-	private int warnings = 0;
-	private int errors = 0;
+	/* Show the raw, unrecognised messages? */
+	const bool SHOW_RAW_MESSAGES = false;
+	
+	
+	/* Counters for keeping track of the number of warnings/errors */
+	private uint warnings = 0;
+	private uint errors = 0;
+	
+	/* ILogger ------------------------------------------------------ */
 	
 	public override void Initialize(IEventSource eventSource)
 	{
@@ -15,8 +30,6 @@ public class CustomLogger: Logger
 		 * for it, and it won't get added...
 		 */
 		
-		//eventSource.TaskStarted += new TaskStartedEventHandler(handleTaskStarted);
-		 
 		eventSource.MessageRaised += new BuildMessageEventHandler(handleMessageRaised);
 		
 		eventSource.WarningRaised += new BuildWarningEventHandler(handleWarningRaised);
@@ -47,16 +60,15 @@ public class CustomLogger: Logger
 			else if (e.SenderName == "CustomBuild") {
 				handleMessage_CustomBuild(e);
 			}
-			else {
-				//Console.WriteLine(String.Format("{0}: [1] -> '{2}'",
-				//                                e.SenderName, e.Importance, e.Message));
+			else if (CustomLogger.SHOW_RAW_MESSAGES) {
+				Console.WriteLine(String.Format("{0}: [1] -> '{2}'",
+				                                e.SenderName, e.Importance, e.Message));
 			}
 		}
 	}
 	
 	
 	/* "CL.exe" events -  A file gets compiled */
-	// XXX: CL events can also be second-line output from errors...
 	private void handleMessage_CL(BuildMessageEventArgs e)
 	{
 		/* Detect whether this one is the commandline report, or the name-only */
@@ -110,9 +122,9 @@ public class CustomLogger: Logger
 			return null;
 		}
 		
-		
 		/* 2) Apply offset to get the start of the path (to the lib) */
 		var startPos = outPos + start_tag.Length;
+		
 		
 		/* 3) Find the end of the path (via the endtag) */
 		var endPos = cmd.IndexOf(end_tag);
@@ -192,13 +204,6 @@ public class CustomLogger: Logger
 	
 	
 	/* Event Handlers ------------------------------------------------ */
-	
-	private void handleTaskStarted(object sender, TaskStartedEventArgs e)
-	{
-		//Console.WriteLine(e.Message);
-		Console.WriteLine(String.Format("Task: '{0}' from '{1}' for {2}",
-		                                e.TaskName, e.TaskFile, e.ProjectFile));
-	}
 	
 	
 	private void handleWarningRaised(object sender, BuildWarningEventArgs e)
