@@ -99,16 +99,39 @@ public class CustomLogger: Logger
 	
 	
 	/* Helper to extract the libname from the commandline */
-	string FindLibnameFromCmdline(string cmd)
+	string FindLibNameFromCmdline(string cmd)
 	{
-		return null;
+		var start_tag = "/OUT:\"";
+		var end_tag = ".lib\" /NOLOGO";
+		
+		/* 1) Find position of the "/OUT:" string */
+		var outPos = cmd.IndexOf(start_tag);
+		if (outPos == -1) {
+			return null;
+		}
+				
+		
+		/* 2) Apply offset to get the start of the path (to the lib) */
+		var startPos = outPos + start_tag.Length;
+		
+		/* 3) Find the end of the path (via the endtag) */
+		var endPos = cmd.IndexOf(end_tag);
+		if (endPos == -1) {
+			return null;
+		}
+		
+		/* 4) Grab the path */
+		var path = cmd.Substring(startPos, endPos - startPos);
+		var libname = System.IO.Path.GetFileName(path);
+		
+		return libname;
 	}
 	
 	/* "LIB" events - Relinking a module */
 	private void handleMessage_LIB(BuildMessageEventArgs e)
 	{
 		/* Extract out the filename from the "OUT" parameter */
-		string libname = FindLibnameFromCmdline(e.Message);
+		string libname = FindLibNameFromCmdline(e.Message);
 		
 		if (libname != null) {
 			string line = String.Format("  Linking Lib => \"{0}\"",
