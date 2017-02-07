@@ -177,7 +177,13 @@ public class CustomLogger: Logger
 		}
 		else if ((is_command_line == false) && (Verbosity != LoggerVerbosity.Detailed)) {
 			/* This is the "Creating Library" line - Only show when not showing detailed logs */
-			WriteFilledLine("  " + e.Message.Trim(),
+			string line = e.Message.Trim();
+			
+			if (line.StartsWith("Creating library") && line.EndsWith("blender.exp")) {
+				line = "Linking \"blender.exe\"...";
+			}
+			
+			WriteFilledLine("  " + line,
 			                ConsoleColor.DarkMagenta, ConsoleColor.White);
 		}
 	}
