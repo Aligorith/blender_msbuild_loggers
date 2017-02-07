@@ -192,13 +192,36 @@ public class CustomLogger: Logger
 		 */
 		
 		/* Logic: Just skip the ones we don't want for now, and report everything else */
-		// TODO: Shade the different cases differently?
 		bool unwanted = (e.Message.StartsWith("CMake does not need to re-run"));
 		
 		if (unwanted == false) {
-			string line = String.Format("> {0}", e.Message);
+			/* Shade each case differently... */
+			ConsoleColor bg_color;
+			if (e.Message.StartsWith("Running")) {
+				bg_color = ConsoleColor.DarkCyan;
+			}
+			else if (e.Message.StartsWith("Generating") || e.Message.StartsWith("Writing")) {
+				bg_color = ConsoleColor.DarkGray;
+			}
+			else {
+				/* XXX: Currently, this will only get used for CMake... */
+				bg_color = ConsoleColor.DarkYellow;
+			}
+			
+			/* Override output format for certain cases... */
+			string line;
+			if ((Verbosity != LoggerVerbosity.Detailed) && 
+			    (e.Message.StartsWith("Generating") && e.Message.EndsWith("rna_prototypes_gen.h")) ) 
+			{
+				line = "> Generating rna_*_gen.c files...";
+			}
+			else {
+				line = String.Format("> {0}", e.Message);
+			}
+			
+			/* Write this event */
 			WriteFilledLine(line,
-			                ConsoleColor.DarkYellow, ConsoleColor.White);
+			                bg_color, ConsoleColor.White);
 		}
 	}
 	
