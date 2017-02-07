@@ -53,13 +53,6 @@ public class CustomLogger: Logger
 	/* Entrypoint for all "Message" handling */
 	private void handleMessageRaised(object sender, BuildMessageEventArgs e)
 	{
-		/* Do not report any more messages if we've been told to abort after the first error.
-		 * This should stop any further "Compiling => Blah" messages making it harder to see
-		 * the error, even if all the building still goes ahead (since we can't request a stop).
-		 */
-		if ((STOP_AFTER_FIRST_ERROR) && (errors > 0))
-			return;
-		
 		// XXX: We almost NEVER want the really detailed shit here... MSVC can be too bloody noisy (producing lots of garbage) if left unchecked
 		if ( (e.Importance == MessageImportance.High && IsVerbosityAtLeast(LoggerVerbosity.Minimal)) ||
 			 (e.Importance == MessageImportance.Normal && IsVerbosityAtLeast(LoggerVerbosity.Normal)) ||
@@ -299,6 +292,7 @@ public class CustomLogger: Logger
 	
 	private void handleErrorRaised(object sender, BuildErrorEventArgs e)
 	{
+		/* Report the error */
 		string filename = ShortSourcename(e.File);
 		string line = String.Format("ERROR: {0}:{1} - {3}  [{2}]",
 		                            filename, e.LineNumber, e.Code, e.Message);
@@ -307,6 +301,13 @@ public class CustomLogger: Logger
 		                ConsoleColor.DarkRed, ConsoleColor.White);
 		
 		errors++;
+		
+		/* Try to trigger a stop */
+		if (STOP_AFTER_FIRST_ERROR) {
+			WriteShadedLine("\nXXX Stopping build now!",
+			                ConsoleColor.Red, ConsoleColor.White);
+			Environment.Exit(-1);
+		}
 	}
 	
 	private void handleBuildFinished(object sender, BuildFinishedEventArgs e)
