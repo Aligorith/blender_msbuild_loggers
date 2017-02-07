@@ -269,7 +269,11 @@ public class CustomLogger: Logger
 	
 	private void handleErrorRaised(object sender, BuildErrorEventArgs e)
 	{
-		WriteShadedLine("!!! " + FormatErrorEvent(e),
+		string filename = ShortSourcename(e.File);
+		string line = String.Format("ERROR: {0}:{1} - {3}  [{2}]",
+		                            filename, e.LineNumber, e.Code, e.Message);
+		
+		WriteShadedLine(line,
 		                ConsoleColor.DarkRed, ConsoleColor.White);
 		
 		errors++;
@@ -281,7 +285,7 @@ public class CustomLogger: Logger
 			WriteShadedLine("# Build succeeded.", ConsoleColor.DarkGreen, ConsoleColor.White);
 		}
 		else {
-			WriteShadedLine("# Build failed.", ConsoleColor.Red, ConsoleColor.Black);
+			WriteShadedLine("# Build failed.", ConsoleColor.Red, ConsoleColor.White);
 		}
 		
 		var warnings_str = String.Format("  {0} Warning(s)", warnings);
