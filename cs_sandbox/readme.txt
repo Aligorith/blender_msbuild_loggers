@@ -1,0 +1,1 @@
+This directory contains small test apps to help develop various functionality
