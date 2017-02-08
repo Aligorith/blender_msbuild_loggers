@@ -53,11 +53,8 @@ public class CustomLogger: Logger
 	/* Entrypoint for all "Message" handling */
 	private void handleMessageRaised(object sender, BuildMessageEventArgs e)
 	{
-		// XXX: We almost NEVER want the really detailed shit here... MSVC can be too bloody noisy (producing lots of garbage) if left unchecked
-		if ( (e.Importance == MessageImportance.High && IsVerbosityAtLeast(LoggerVerbosity.Minimal)) ||
-			 (e.Importance == MessageImportance.Normal && IsVerbosityAtLeast(LoggerVerbosity.Normal)) ||
-			 (e.Importance == MessageImportance.Low && IsVerbosityAtLeast(LoggerVerbosity.Detailed)) )
-		{
+		/* We really don't ever care about any of the more detailed stuff, so let's just not bother */
+		if (e.Importance == MessageImportance.High) {
 			if (e.SenderName == "CL") {
 				handleMessage_CL(e);
 			}
