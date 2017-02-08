@@ -1,0 +1,38 @@
+diff --git a/source/blender/editors/gpencil/gpencil_edit.c b/source/blender/editors/gpencil/gpencil_edit.c
+index e118e49..dba76be 100644
+--- a/source/blender/editors/gpencil/gpencil_edit.c
++++ b/source/blender/editors/gpencil/gpencil_edit.c
+@@ -544,6 +544,21 @@ static int gp_strokes_paste_exec(bContext *C, wmOperator *op)
+ 				
+ 				new_stroke->next = new_stroke->prev = NULL;
+ 				BLI_addtail(&gpf->strokes, new_stroke);
++				
++				/* Ensure the source color exists here too... */
++				//bGPDpalettecolor *pcol = BKE_gpencil_palettecolor_getbyname(pal, new_stroke->colorname);
++				int lol = 2;
++				float zozo = 20.12;
++				int lala = zozo;
++				printf("%d\n", lala + 5);
++				
++				typedef struct UnusedDummy {
++					int a;
++					int b;
++				} UnusedDummy;
++				UnusedDummy d1;
++				printf("v = %d, %d\n", d1.a);
++				printf("v = %d, %d\n", d1.a, d1.b);
+ 			}
+ 		}
+ 	}
+diff --git a/source/blender/makesdna/DNA_gpencil_types.h b/source/blender/makesdna/DNA_gpencil_types.h
+index 0364d85..38af4be 100644
+--- a/source/blender/makesdna/DNA_gpencil_types.h
++++ b/source/blender/makesdna/DNA_gpencil_types.h
+@@ -172,6 +172,7 @@ typedef struct bGPDstroke {
+ 	 */
+ 	char colorname[128];    /* color name */
+ 	bGPDpalettecolor *palcolor; /* current palette color */
++	
+ 	/* temporary layer name only used during copy/paste to put the stroke in the original layer */
+ 	char tmp_layerinfo[128];
+ } bGPDstroke;
