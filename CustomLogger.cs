@@ -197,46 +197,73 @@ public class CustomLogger: Logger
 	}
 	
 	/* CustomBuild events */
+	/* Cases:
+	 *  -> Include: "Generate" events
+	 *  -> Include: makesdna/rna events - "Running", "Writing", etc.
+	 *  -> Skip: "CMake does not need to re-run"...
+	 */
 	private void handleMessage_CustomBuild(BuildMessageEventArgs e)
 	{
-		/* Cases:
-		 *  -> Include: "Generate" events
-		 *  -> Include: makesdna/rna events - "Running", "Writing", etc.
-		 *  -> Skip: "CMake does not need to re-run"...
-		 */
-		
-		/* Logic: Just skip the ones we don't want for now, and report everything else */
-		bool unwanted = (e.Message.StartsWith("CMake does not need to re-run"));
-		
-		if (unwanted == false) {
-			/* Shade each case differently... */
-			ConsoleColor bg_color;
-			if (e.Message.StartsWith("Running")) {
-				bg_color = ConsoleColor.DarkCyan;
-			}
-			else if (e.Message.StartsWith("Generating") || e.Message.StartsWith("Writing")) {
-				bg_color = ConsoleColor.DarkGray;
-			}
-			else {
-				/* XXX: Currently, this will only get used for CMake... */
-				bg_color = ConsoleColor.DarkYellow;
-			}
-			
-			/* Override output format for certain cases... */
-			string line;
-			if ((Verbosity != LoggerVerbosity.Detailed) && 
-			    (e.Message.StartsWith("Generating") && e.Message.EndsWith("rna_prototypes_gen.h")) ) 
-			{
-				line = "> Generating rna_*_gen.c files...";
-			}
-			else {
-				line = String.Format("> {0}", e.Message);
-			}
-			
-			/* Write this event */
-			WriteFilledLine(line,
-			                bg_color, ConsoleColor.White);
+		/* Logic: First, just skip the ones we don't want for now, and report everything else */
+		if (e.Message.StartsWith("CMake does not need to re-run"))
+		{
+			return;
 		}
+		
+		
+		/* Shade each case differently... */
+		ConsoleColor bg_color;
+		bool show_mark = false;
+		
+		if (e.Message.StartsWith("Running")) {
+			/* Running makesdna/makesrna - Interesting (as it could fail) */
+			bg_color = ConsoleColor.DarkCyan;
+			show_mark = true;
+		}
+		else if (e.Message.StartsWith("Generating") && e.Message.Contains("release/datafiles/blender_icons")) {
+			/* Compiling Icon Files - Rare event (interesting) */
+			bg_color = ConsoleColor.DarkCyan;
+			show_mark = true;
+		}
+		else if (e.Message.StartsWith("Generating") || e.Message.StartsWith("Writing")) {
+			/* Auto-generated files -> Not interesting... */
+			bg_color = ConsoleColor.DarkGray;
+			show_mark = true;
+		}
+		else if (e.Message.StartsWith("Checking Build System") || 
+		         e.Message.StartsWith("CMake is re-running because"))
+		{
+			/* Start of proceedings - Start of each CMake action... */
+			bg_color = ConsoleColor.DarkYellow;
+			show_mark = true;
+		}
+		else {
+			/* XXX: Currently, this will only get used for CMake "prose"... */
+			bg_color = ConsoleColor.DarkYellow;
+			show_mark = false;
+		}
+		
+		
+		/* Create/Format output line */
+		string line;
+		if ((Verbosity != LoggerVerbosity.Detailed) && 
+		    (e.Message.StartsWith("Generating") && e.Message.EndsWith("rna_prototypes_gen.h")) ) 
+		{
+			/* Use a shortened version in this case */
+			line = "> Generating rna_*_gen.c files...";
+		}
+		else if (show_mark) {
+			/* Usually, these are commands/starts of important actions and events */
+			line = String.Format("> {0}", e.Message);
+		}
+		else {
+			/* Unimportant line (part of some existing output) */
+			line = String.Format(" {0}", e.Message);
+		}
+		
+		/* Write this event */
+		WriteFilledLine(line,
+		                bg_color, ConsoleColor.White);
 	}
 	
 	
