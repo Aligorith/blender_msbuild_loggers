@@ -279,7 +279,7 @@ public class CustomLogger: Logger
 		/* Use grandparent if parent directory is "intern", since there's no useful info there */
 		string filename = elems[elems.Length - 1];
 		string parname  = elems[elems.Length - 2];
-		string gpname   = elems[elems.Length - 3];
+		string gpname   = (elems.Length >= 3) ? elems[elems.Length - 3] : "";
 		
 		string dirname = null;
 		
