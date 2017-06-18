@@ -80,7 +80,8 @@ public class CustomLogger: Logger
 	{
 		/* Detect whether this one is the commandline report, or the name-only */
 		bool is_command_line = e.Message.Contains("CL.exe");
-		bool is_err_overflow = ((e.Message[0] == ' ') || (e.Message[0] == '\t'));
+		bool is_err_overflow = ((e.Message.Length == 0) || ((e.Message[0] == ' ') || (e.Message[0] == '\t')));
+		bool is_preprocess   = e.Message.Contains("Generating Code...") || e.Message.Contains("Compiling...");
 		
 		/* Unless we want detailed logs, skip the one where it reports the commandline being used */
 		if (is_command_line == true) {
@@ -102,6 +103,10 @@ public class CustomLogger: Logger
 				WriteShadedLine(e.Message,
 				                ConsoleColor.Yellow, ConsoleColor.Black);
 			}
+		}
+		else if (is_preprocess) {
+			/* "Generating Code/Compiling" Messages -> Unknown origins, but will cause errors otherwise if we just leave */
+			Console.WriteLine("  --> {0}", e.Message);
 		}
 		else {
 			if (Verbosity != LoggerVerbosity.Detailed) {
