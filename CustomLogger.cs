@@ -24,6 +24,12 @@ public class CustomLogger: Logger
 	// NOTE: This should ideally be done in the build-scripts/configs,
 	// but sometimes when all else fails, a hack here is equally efficient.
 	const bool HIDE_ZEROSIZEDARRAY_WARNINGS = true;
+
+	/* Silence errors that are out of our control
+	 * (e.g. config mismatches, deprecation warnings we don't care about, etc.)
+	 */
+	const bool IGNORE_LIB_DEPRECATION_WARNINGS = true;
+	const bool IGNORE_KNOWN_WARNINGS = true;
 	
 	/* Logger State ------------------------------------------------- */
 	
@@ -282,8 +288,8 @@ public class CustomLogger: Logger
 		string[] elems = path.Split(SEP);
 		
 		/* Use grandparent if parent directory is "intern", since there's no useful info there */
-		string filename = elems[elems.Length - 1];
-		string parname  = elems[elems.Length - 2];
+		string filename = (elems.Length >= 1) ? elems[elems.Length - 1] : path;
+		string parname  = (elems.Length >= 2) ? elems[elems.Length - 2] : "";
 		string gpname   = (elems.Length >= 3) ? elems[elems.Length - 3] : "";
 		
 		string dirname = null;
@@ -306,6 +312,31 @@ public class CustomLogger: Logger
 		/* Skip this warning if is one of the ones we don't want to know about */
 		if (HIDE_ZEROSIZEDARRAY_WARNINGS && e.Message.Contains("zero-sized array"))
 			return;
+
+		if (IGNORE_KNOWN_WARNINGS) {
+			/* /utf-8 option is not supported is VC2013 */
+			if (e.Message.Contains("D9002") && e.Message.Contains("ignoring unknown option '/utf-8'"))
+				return;
+
+			/* C++ Concurrency Stuff - Somehow this has some mismatches with the MS stuff, causing long docs to get spewed */
+			if (e.Message.Contains("include/ppltasks.h") || e.Message.Contains("Concurrency::"))
+				return;
+
+			/* Transform snap initialiser syntax */
+			if (e.Message.Contains("transform/transform_snap.c") &&
+				e.Message.Contains("'&' : check operator precedence for possible error; use parentheses to clarify precedence"))
+			{
+				return;
+			}
+		}
+		if (IGNORE_LIB_DEPRECATION_WARNINGS) {
+			/* FFMPEG deprecation warnings */
+			if ((e.Message.Contains("was declared deprecated")) &&
+				(e.Message.Contains("'av") || e.Message.Contains("ffmpeg\\include")) )
+			{
+				return;
+			}
+		}
 		
 		
 		/* Warning is ok, prepare to print it... */
