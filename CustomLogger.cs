@@ -315,7 +315,7 @@ public class CustomLogger: Logger
 
 		if (IGNORE_KNOWN_WARNINGS) {
 			/* /utf-8 option is not supported is VC2013 */
-			if (e.Message.Contains("D9002") && e.Message.Contains("ignoring unknown option '/utf-8'"))
+			if (e.Message.Contains("ignoring unknown option '/utf-8'")) //&& e.Message.Contains("D9002")
 				return;
 
 			/* C++ Concurrency Stuff - Somehow this has some mismatches with the MS stuff, causing long docs to get spewed */
